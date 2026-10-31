@@ -3,6 +3,9 @@
 // "kooperativ" (two fingers / Ctrl+scroll, so one-finger page scrolling passes through), "voll".
 import { useEffect, useRef, useState } from "react";
 import type { GeoJSONSource, LineLayerSpecification, Map as MLMap, Marker, PaddingOptions } from "maplibre-gl";
+// MapLibre 6 finds its worker next to its own file at runtime, which breaks once Vite bundles it.
+// Shipping the (self-contained) worker as an asset and pointing MapLibre at it works in dev and build.
+import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?url";
 
 export type MapLinie = {
   id: string;
@@ -85,6 +88,7 @@ export function RouteMap({ linien, punkte = [], fit, modus, onLinie, hover = nul
       const [mod] = await Promise.all([import("maplibre-gl"), import("maplibre-gl/dist/maplibre-gl.css")]);
       if (abgebrochen || !container.current) return;
       lib.current = mod;
+      mod.setWorkerUrl(workerUrl);
       const map = new mod.Map({
         container: container.current,
         style: {
