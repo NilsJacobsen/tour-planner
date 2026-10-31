@@ -19,7 +19,7 @@ let the `tour-pruefer` agent review it.
 - `node scripts/commons.mjs suche "<Ort>"` / `hole "File:…" public/bilder/<slug>/<name>.jpg` →
   freely licensed photos from Wikimedia Commons with credit, licence and source.
 - `node scripts/osm-wasser.mjs <slug> <süd,west,nord,ost> "<See>" …` → lake outlines.
-- `npm run build` → static `dist/` for Cloudflare Pages (`public/_redirects` does the SPA fallback).
+- `npm run build` → static `dist/`, served by a Cloudflare Worker (`wrangler.jsonc`: static assets with SPA fallback; Cloudflare runs `npx wrangler deploy` after each push to `main`).
 
 ## Content (`content/`)
 

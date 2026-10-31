@@ -1,0 +1,11 @@
+// Cloudflare Worker that serves the built site (dist/) as static files.
+// Unknown paths fall back to index.html so React Router can handle them.
+{
+  "$schema": "https://unpkg.com/wrangler@4.156.0/config-schema.json",
+  "name": "tour-planner",
+  "compatibility_date": "2026-10-23",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  }
+}
