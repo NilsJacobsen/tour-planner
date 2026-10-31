@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:tp="urn:tour-planner:gpx:1" creator="tour-planner prototype-a (BRouter)" version="1.1">
+ <trk>
+  <name>Abstecher · Gotzenalm → Feuerpalfen → Gotzenalm</name>
+  <desc>Routed via BRouter (hiking-mountain) through 47.5373,12.99637 → 47.54084,12.99246 → 47.5373,12.99637</desc>
+  <extensions>
+   <tp:difficulty grade="T2" source="OpenStreetMap sac_scale via BRouter">
+    <tp:section class="path" meters="506"/>
+    <tp:section class="road" meters="116"/>
+    <tp:section class="T2" meters="540"/>
+    <tp:run class="path" from="0" to="3"/>
+    <tp:run class="road" from="3" to="6"/>
+    <tp:run class="path" from="6" to="10"/>
+    <tp:run class="T2" from="10" to="34"/>
+    <tp:run class="path" from="34" to="38"/>
+    <tp:run class="road" from="38" to="41"/>
+    <tp:run class="path" from="41" to="44"/>
+   </tp:difficulty>
+  </extensions>
+  <trkseg>
+   <trkpt lat="47.537297" lon="12.996552"><ele>1683.25</ele></trkpt>
+   <trkpt lat="47.537178" lon="12.996551"><ele>1681.75</ele></trkpt>
+   <trkpt lat="47.537128" lon="12.996481"><ele>1682</ele></trkpt>
+   <trkpt lat="47.537129" lon="12.99629"><ele>1684</ele></trkpt>
+   <trkpt lat="47.537126" lon="12.996094"><ele>1685</ele></trkpt>
+   <trkpt lat="47.537184" lon="12.996033"><ele>1685.75</ele></trkpt>
+   <trkpt lat="47.537494" lon="12.996109"><ele>1688.75</ele></trkpt>
+   <trkpt lat="47.53794" lon="12.995764"><ele>1698.5</ele></trkpt>
+   <trkpt lat="47.538435" lon="12.995556"><ele>1710</ele></trkpt>
+   <trkpt lat="47.538914" lon="12.995149"><ele>1722.75</ele></trkpt>
+   <trkpt lat="47.539273" lon="12.994916"><ele>1727.75</ele></trkpt>
+   <trkpt lat="47.539307" lon="12.994841"><ele>1729.25</ele></trkpt>
+   <trkpt lat="47.539416" lon="12.994702"><ele>1733.75</ele></trkpt>
+   <trkpt lat="47.539568" lon="12.994262"><ele>1733.25</ele></trkpt>
+   <trkpt lat="47.539618" lon="12.993988"><ele>1735.5</ele></trkpt>
+   <trkpt lat="47.539698" lon="12.993763"><ele>1738.5</ele></trkpt>
+   <trkpt lat="47.539854" lon="12.9935"><ele>1736.75</ele></trkpt>
+   <trkpt lat="47.539999" lon="12.993221"><ele>1738.75</ele></trkpt>
+   <trkpt lat="47.540078" lon="12.993119"><ele>1736.25</ele></trkpt>
+   <trkpt lat="47.540462" lon="12.993044"><ele>1728.5</ele></trkpt>
+   <trkpt lat="47.540651" lon="12.99291"><ele>1720.5</ele></trkpt>
+   <trkpt lat="47.540752" lon="12.992708"><ele>1715</ele></trkpt>
+   <trkpt lat="47.540839" lon="12.992459"><ele>1699.75</ele></trkpt>
+   <trkpt lat="47.540752" lon="12.992708"><ele>1715</ele></trkpt>
+   <trkpt lat="47.540651" lon="12.99291"><ele>1720.5</ele></trkpt>
+   <trkpt lat="47.540462" lon="12.993044"><ele>1728.5</ele></trkpt>
+   <trkpt lat="47.540078" lon="12.993119"><ele>1736.25</ele></trkpt>
+   <trkpt lat="47.539999" lon="12.993221"><ele>1738.75</ele></trkpt>
+   <trkpt lat="47.539854" lon="12.9935"><ele>1736.75</ele></trkpt>
+   <trkpt lat="47.539698" lon="12.993763"><ele>1738.5</ele></trkpt>
+   <trkpt lat="47.539618" lon="12.993988"><ele>1735.5</ele></trkpt>
+   <trkpt lat="47.539568" lon="12.994262"><ele>1733.25</ele></trkpt>
+   <trkpt lat="47.539416" lon="12.994702"><ele>1733.75</ele></trkpt>
+   <trkpt lat="47.539307" lon="12.994841"><ele>1729.25</ele></trkpt>
+   <trkpt lat="47.539273" lon="12.994916"><ele>1727.75</ele></trkpt>
+   <trkpt lat="47.538914" lon="12.995149"><ele>1722.75</ele></trkpt>
+   <trkpt lat="47.538435" lon="12.995556"><ele>1710</ele></trkpt>
+   <trkpt lat="47.53794" lon="12.995764"><ele>1698.5</ele></trkpt>
+   <trkpt lat="47.537494" lon="12.996109"><ele>1688.75</ele></trkpt>
+   <trkpt lat="47.537184" lon="12.996033"><ele>1685.75</ele></trkpt>
+   <trkpt lat="47.537126" lon="12.996094"><ele>1685</ele></trkpt>
+   <trkpt lat="47.537129" lon="12.99629"><ele>1684</ele></trkpt>
+   <trkpt lat="47.537128" lon="12.996481"><ele>1682</ele></trkpt>
+   <trkpt lat="47.537178" lon="12.996551"><ele>1681.75</ele></trkpt>
+   <trkpt lat="47.537297" lon="12.996552"><ele>1683.5</ele></trkpt>
+  </trkseg>
+ </trk>
+</gpx>

@@ -1,0 +1,54 @@
+# Base packing list for hut tours. Each trip can add items (packliste.plus) or drop some
+# (packliste.ohne) in its tour.md.
+
+kategorien:
+  - id: ausruestung
+    titel: Ausrüstung
+    items:
+      - { id: rucksack, name: "Rucksack, etwa 30–40 Liter, mit Regenhülle", pflicht: true }
+      - { id: bergschuhe, name: Feste Bergschuhe mit Profilsohle, pflicht: true }
+      - { id: stoecke, name: Wanderstöcke, hinweis: Entlasten die Knie bei langen Abstiegen. }
+      - { id: stirnlampe, name: Stirnlampe, hinweis: Für Matratzenlager und frühe Starts., pflicht: true }
+      - { id: trinkflasche, name: "Trinkflasche, mindestens 1,5 Liter", pflicht: true }
+
+  - id: kleidung
+    titel: Kleidung
+    items:
+      - { id: regenjacke, name: Regenjacke, pflicht: true }
+      - { id: warme-schicht, name: Fleece oder leichte Daunenjacke, pflicht: true }
+      - { id: shirts, name: Funktionsshirts zum Wechseln }
+      - { id: wanderhose, name: Wanderhose }
+      - { id: muetze-handschuhe, name: Mütze und dünne Handschuhe, hinweis: Auch im Sommer – das Wetter kann umschlagen. }
+      - { id: sonnenhut, name: Sonnenhut oder Kappe }
+      - { id: waesche, name: Wäsche und Socken zum Wechseln }
+
+  - id: huette
+    titel: Für die Hütte
+    items:
+      - { id: huettenschlafsack, name: Hüttenschlafsack, hinweis: Pflicht auf Alpenvereinshütten., pflicht: true }
+      - { id: huettenschuhe, name: Leichte Hüttenschuhe, hinweis: Bergstiefel bleiben im Schuhraum., pflicht: true }
+      - { id: ohrstoepsel, name: Ohrstöpsel }
+      - { id: handtuch, name: Kleines, schnell trocknendes Handtuch }
+      - { id: kulturbeutel, name: Kleiner Kulturbeutel }
+
+  - id: sicherheit
+    titel: Sicherheit & Gesundheit
+    items:
+      - { id: erste-hilfe, name: Erste-Hilfe-Set, pflicht: true }
+      - { id: blasenpflaster, name: Blasenpflaster }
+      - { id: sonnenschutz, name: Sonnencreme und Sonnenbrille, pflicht: true }
+      - { id: rettungsdecke, name: Rettungsdecke }
+      - { id: handy, name: Handy mit Notruf-App und Powerbank }
+
+  - id: dokumente
+    titel: Dokumente & Geld
+    items:
+      - { id: ausweis, name: Personalausweis, pflicht: true }
+      - { id: av-ausweis, name: Alpenvereinsausweis, hinweis: "Falls Mitglied: günstiger übernachten auf Alpenvereinshütten." }
+      - { id: krankenkasse, name: Krankenversicherungskarte, pflicht: true }
+      - { id: bargeld, name: Bargeld, hinweis: Nicht jede Hütte nimmt Karte. }
+
+  - id: verpflegung
+    titel: Verpflegung
+    items:
+      - { id: proviant, name: Snacks und Proviant für unterwegs }
