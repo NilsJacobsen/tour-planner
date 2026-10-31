@@ -2,7 +2,8 @@
 
 German single-page app that presents the multi-day hut trips of the Wandergruppe Jacobsen. Real
 content, styled after the owner's design (see "Look"); input for the final design in Figma.
-Mobile first (390 px), then desktop. Internal group: no sign-up, no prices, no forms. `noindex` is set.
+Mobile first (390 px), then desktop. Internal group: no sign-up, no forms, no prices — except a
+rough per-person cost estimate (`kosten`) when the owner wants one for a trip. `noindex` is set.
 
 **Planning a new trip:** follow the `/neue-tour` skill (`.claude/skills/neue-tour/SKILL.md`), then
 let the `tour-pruefer` agent review it.
@@ -36,6 +37,17 @@ touren/<slug>/karte.geojson      lake outlines for the route drawing (scripts/os
 
 The schema is `src/content/schema.ts` (zod). `src/content/model.ts` builds everything from the
 files — the same code runs in the browser and in `npm run check`.
+
+### Optional trip blocks
+
+- `plan`: the whole trip day by day, travel days included (`wochentag`, then `etappe: N` for a
+  walking day or `titel`/`text`/`nacht` for a travel or rest day). Shown above the day table in
+  "Tag für Tag"; the check warns if a walking day is missing or listed twice. Use it when the trip
+  has travel days worth showing (Pyrenees: drive there, Gavarnie, a night at the sea, drive home).
+- `kosten`: a rough cost estimate per person (`posten` with `name` and `betrag` in €, `hinweis`).
+  The total is computed. Only when the owner asks for it.
+- `grenzen` per trip: the group's 17 km / 1100 Hm / T3 unless the owner decides a trip is harder
+  on purpose (Pyrenees: 25 km / 1600 Hm / T3, with the T4 stretches flagged).
 
 ### A/B routes
 

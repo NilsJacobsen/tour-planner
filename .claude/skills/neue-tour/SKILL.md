@@ -129,6 +129,13 @@ Don't commit or deploy unless asked.
   (Pitztaler Jöchl = T4 in OSM → `--sac 4` and flag it; Zams descent closed → official detour).
 - A bridge or path crossing above another: check the track really uses the bridge (Holzgau).
 - Waypoint order matters; a wrong order makes loops and doubles the distance.
+- A summit node can sit on a harder ridge path: Monte Perdido's summit snapped onto 20 m of T6.
+  Put the summit via a few metres down the normal route.
+- Official tracks often exist as data: the Hautes-Pyrénées tourism sites run Geotrek
+  (`geotrek65admin.openig.org/api/v2/trek/<id>/?format=json` → `geometry`). Take via points from
+  them and compare the route against them, not just the km.
+- Owner pitches can contain claims that don't hold (Pyrenees: "the sun sets into the sea at Sète";
+  in September it sets over the Étang de Thau). Check them like any other fact and tell the owner.
 - Official long-distance trail ≠ the tourist variant (E5 officially via Timmelsjoch; the hut
   variant via Similaun isn't in the ERA relation).
 - Austrian/Italian signpost colours differ from the DAV ones; name the T-grade and the local rating.

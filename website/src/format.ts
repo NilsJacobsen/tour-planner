@@ -7,6 +7,7 @@ export const km = (n: number) => `${nf1.format(n)} km`;
 export const meter = (n: number) => `${nf0.format(Math.round(n))} m`;
 export const hm = (n: number) => `${nf0.format(Math.round(n))} Hm`;
 export const zahl = (n: number) => nf0.format(n);
+export const euro = (n: number) => `${nf0.format(Math.round(n))} €`;
 
 // Walking time in quarter hours: "4:15 h"
 export function dauer(hours: number) {

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { site } from "../content/load.ts";
 import { konditionStufe, type TourView } from "../content/model.ts";
-import { dauer, datumLang, hm, km, zeitraum, zeitraumKurz } from "../format.ts";
+import { dauer, datumLang, euro, hm, km, zeitraum, zeitraumKurz } from "../format.ts";
 import { DAV_FARBE, GRADE_NAME, MITTEL, STATUS, VERSORGUNG } from "../text.ts";
 import { Feld, Fehlt } from "../wireframe.tsx";
 import { Bild, GradeBadge, GradeMix, InfoLink, Kondition, Markdown, TagNr } from "../components/basics.tsx";
@@ -199,10 +199,58 @@ function TagFuerTag({ tour }: { tour: TourView }) {
   return (
     <section id="tag-fuer-tag" className="abschnitt seitenbreite">
       <h2>Tag für Tag</h2>
+      {tour.data.plan && (
+        <Feld name="tour.plan">
+          <PlanListe tour={tour} />
+        </Feld>
+      )}
+      {tour.data.plan && <h3>Die Wandertage</h3>}
       <Feld name="abgeleitet: Kennzahlen je Tag">
         <UeberblickTabelle tour={tour} />
       </Feld>
     </section>
+  );
+}
+
+// The whole trip from the first to the last day, travel days included.
+function PlanListe({ tour }: { tour: TourView }) {
+  const plan = tour.data.plan!;
+  return (
+    <>
+      <ol className="plan">
+        {plan.tage.map((t, i) => {
+          const e = t.etappe != null ? tour.etappen.find((x) => x.tag === t.etappe) : undefined;
+          const st = e?.standard.stats;
+          const nacht = t.nacht ?? e?.uebernachtung?.ort.name;
+          return (
+            <li key={i} className={e ? "plan-tag plan-wandern" : "plan-tag"}>
+              <span className="plan-wochentag">{t.wochentag}</span>
+              <div className="plan-inhalt">
+                <p className="plan-titel">
+                  {e && <TagNr tag={e.tag} to={`/touren/${tour.slug}/etappe/${e.tag}`} />}
+                  {e ? <Link to={`/touren/${tour.slug}/etappe/${e.tag}`}>{t.titel ?? e.data.titel}</Link> : t.titel}
+                </p>
+                {t.text && <p className="plan-text">{t.text}</p>}
+                {st && (
+                  <p className="plan-zahlen">
+                    {km(st.km)} · ↑ {hm(st.up)} · ↓ {hm(st.down)} · {dauer(st.hours)}
+                  </p>
+                )}
+                {t.link && (
+                  <p className="plan-text">
+                    <a href={t.link} target="_blank" rel="noreferrer">
+                      Route ansehen ↗
+                    </a>
+                  </p>
+                )}
+              </div>
+              {nacht && <span className="plan-nacht">{nacht}</span>}
+            </li>
+          );
+        })}
+      </ol>
+      {plan.hinweis && <Markdown text={plan.hinweis} className="plan-hinweis" />}
+    </>
   );
 }
 
@@ -411,6 +459,31 @@ function Praktisches({ tour }: { tour: TourView }) {
           </dd>
         </div>
       </dl>
+
+      {d.kosten && (
+        <Feld name="tour.kosten">
+          <div className="kosten">
+            <h3>Was es kostet</h3>
+            <p>Eine grobe Schätzung pro Person{d.kosten.hinweis ? ` – ${d.kosten.hinweis}` : "."}</p>
+            <table className="kosten-tabelle">
+              <tbody>
+                {d.kosten.posten.map((p) => (
+                  <tr key={p.name}>
+                    <th scope="row">{p.name}</th>
+                    <td>{euro(p.betrag)}</td>
+                  </tr>
+                ))}
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th scope="row">Zusammen etwa</th>
+                  <td>{euro(d.kosten.posten.reduce((s, p) => s + p.betrag, 0))}</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </Feld>
+      )}
 
       <Feld name="tour.packliste.plus">
         <div className="packliste-teaser">

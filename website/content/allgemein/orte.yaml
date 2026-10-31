@@ -545,3 +545,232 @@ orte:
     lat: 46.67267
     lon: 11.15040
     hinweis: Der Bus 261 hält am Bahnhof.
+
+  # --- Pyrenäen: Gavarnie, Vignemale, Ordesa, Monte Perdido
+  - id: gavarnie
+    name: Gavarnie
+    bild:
+      src: /bilder/orte/gavarnie.jpg
+      motiv: Das Dorf Gavarnie im grünen Talboden, gesehen vom Weg zum Plateau de Bellevue
+      format: quer
+      ausschnitt: right center
+      credit: Anthospace (Wikimedia Commons)
+      lizenz: CC BY-SA 4.0
+      quelle: "https://commons.wikimedia.org/wiki/File:Gavarnie_65-_beginning_climb_Plateau_de_Bellevue-_JVGBR_(1).jpg"
+    typ: ort
+    lat: 42.73220
+    lon: -0.00935
+    web: https://www.valleesdegavarnie.com
+    hinweis: >-
+      Autos und Busse parken auf den gebührenpflichtigen Parkplätzen am Ortseingang (2026: 8 € pro 24 Stunden,
+      Wohnmobile 10 €). Ob es einen Wochentarif gibt, klären wir mit dem Tourismusbüro.
+    quelle: https://www.valleesdegavarnie.com/en-plein-air/visiter-le-cirque-de-gavarnie/
+    geprueft: "2026-10-31"
+  - id: refuge-bayssellance
+    name: Refuge de Bayssellance
+    bild:
+      src: /bilder/orte/refuge-baysellance.jpg
+      motiv: Die Refuge de Bayssellance (klein in der Bildmitte) unter dem Vignemale-Massiv mit dem Ossoue-Gletscher, vorn rotes Schiefergeröll
+      format: quer
+      ausschnitt: center 45%
+      credit: Acer11 (Wikimedia Commons)
+      lizenz: CC BY-SA 3.0
+      quelle: "https://commons.wikimedia.org/wiki/File:Bayssellance_Vignemale.JPG"
+    typ: huette
+    lat: 42.77940
+    lon: -0.12415
+    hoehe: 2651
+    web: https://refugebayssellance.ffcam.fr
+    telefon: "+33 9 74 77 66 52"
+    hinweis: >-
+      Laut FFCAM die höchste bewirtschaftete Hütte der Pyrenäen. Decken gibt es, ein Hüttenschlafsack ist
+      Pflicht. Keine Dusche, kein Handynetz. Bezahlt wird bar oder per Scheck, nicht mit Karte.
+    huette:
+      betreiber: FFCAM (Club Alpin Français Bordeaux)
+      saison: "2026: 30. Mai bis 10. Oktober"
+      versorgung: bewirtschaftet
+      plaetze: { lager: 58 }
+      buchung: Bis acht Personen online über das Reservierungssystem der FFCAM, größere Gruppen per E-Mail an die Hütte.
+    quelle: https://refugebayssellance.ffcam.fr
+    geprueft: "2026-10-31"
+  - id: lac-d-ossoue
+    name: Stausee von Ossoue
+    typ: see
+    lat: 42.75790
+    lon: -0.09720
+  - id: grottes-bellevue
+    name: Grottes Bellevue
+    typ: aussicht
+    lat: 42.77553
+    lon: -0.12164
+  - id: hourquette-d-ossoue
+    name: Hourquette d'Ossoue
+    typ: pass
+    lat: 42.77929
+    lon: -0.13135
+    hoehe: 2734
+  - id: petit-vignemale
+    name: Petit Vignemale
+    typ: gipfel
+    lat: 42.77470
+    lon: -0.13505
+    hoehe: 3032
+  - id: refuge-oulettes-de-gaube
+    name: Refuge des Oulettes de Gaube
+    bild:
+      src: /bilder/orte/refuge-oulettes-de-gaube.jpg
+      motiv: Die steinerne Refuge des Oulettes de Gaube auf grüner Wiese am Bach, dahinter Hänge mit Schneeresten
+      format: quer
+      credit: Kaprixo (Wikimedia Commons)
+      lizenz: CC BY-SA 3.0
+      quelle: "https://commons.wikimedia.org/wiki/File:Oulettes.JPG"
+    typ: huette
+    lat: 42.79292
+    lon: -0.14143
+    hoehe: 2151
+    web: https://refugeoulettesdegaube.ffcam.fr
+    telefon: "+33 9 88 18 41 46"
+    hinweis: >-
+      Direkt unter der Nordwand des Vignemale. Nach dem Umbau seit Juli 2026 wieder offen. Hüttenschlafsack ist Pflicht.
+      Bezahlt wird bar oder per Scheck, nicht mit Karte.
+    huette:
+      betreiber: FFCAM (CAF Lourdes-Cauterets)
+      saison: "2026: 25. Juli bis 17. Oktober"
+      versorgung: bewirtschaftet
+      plaetze: { lager: 95 }
+      buchung: Online über das Reservierungssystem der FFCAM; orange markierte Tage nur direkt bei der Hütte.
+    quelle: https://refugeoulettesdegaube.ffcam.fr
+    geprueft: "2026-10-31"
+  - id: col-des-mulets
+    name: Col des Mulets
+    typ: pass
+    lat: 42.78910
+    lon: -0.15566
+    hoehe: 2591
+    hinweis: Grenze zwischen Frankreich und Spanien.
+  - id: bujaruelo
+    name: Refugio de Bujaruelo
+    bild:
+      src: /bilder/pyrenaeen/puente-de-bujaruelo-hoch.jpg
+      motiv: Die romanische Steinbrücke über den Ara bei San Nicolás de Bujaruelo, gleich neben dem Refugio
+      format: quer
+      ausschnitt: center 35%
+      credit: José-Ángel Ruiz Prado (Wikimedia Commons)
+      lizenz: CC BY-SA 4.0
+      quelle: "https://commons.wikimedia.org/wiki/File:Bujaruelo_-_Puente_rom%C3%A1nico_y_r%C3%ADo_Ara.jpg"
+    typ: huette
+    lat: 42.69456
+    lon: -0.10717
+    hoehe: 1338
+    web: https://www.refugiodebujaruelo.com
+    telefon: "+34 974 486 412"
+    hinweis: >-
+      Bei San Nicolás de Bujaruelo, neben der romanischen Brücke über den Ara und außerhalb des Nationalparks. Zimmer für
+      zwei bis vier Personen mit eigenem Bad und Lager für 6 und 15 Personen. Im Lager sind Hüttenschlafsack und
+      Handtuch Pflicht; Bettzeug kann man leihen.
+    huette:
+      betreiber: Refugio de Bujaruelo (privat)
+      saison: Mitte März bis Ende Oktober
+      versorgung: bewirtschaftet
+      buchung: Online auf der Website der Hütte mit Anzahlung; telefonisch nur für denselben oder den nächsten Tag.
+    quelle: https://www.refugiodebujaruelo.com/alojamiento-en-ordesa/
+    geprueft: "2026-10-31"
+  - id: pradera-de-ordesa
+    name: Pradera de Ordesa
+    typ: ort
+    lat: 42.64923
+    lon: -0.05973
+    hinweis: Endstation des Nationalpark-Busses aus Torla (fährt nicht an allen Septembertagen).
+    quelle: https://ordesabus.com/wp-content/uploads/2026/03/horario-autobuses-ordesa-2026.pdf
+    geprueft: "2026-10-31"
+  - id: gradas-de-soaso
+    name: Gradas de Soaso
+    typ: aussicht
+    lat: 42.63791
+    lon: -0.00006
+  - id: cola-de-caballo
+    name: Cola de Caballo
+    typ: aussicht
+    lat: 42.65096
+    lon: 0.01539
+    hinweis: Der Wasserfall am Ende des Ordesa-Tals.
+  - id: refugio-goriz
+    name: Refugio de Góriz
+    bild:
+      src: /bilder/orte/refugio-goriz.jpg
+      motiv: Das Refugio de Góriz mit gelben Fensterläden und Terrasse auf den Karstterrassen unter dem Monte-Perdido-Massiv
+      format: quer
+      credit: Pacopac (Wikimedia Commons)
+      lizenz: CC BY-SA 4.0
+      quelle: "https://commons.wikimedia.org/wiki/File:Refugio_de_G%C3%B3riz_05.jpg"
+    typ: huette
+    lat: 42.66331
+    lon: 0.01497
+    hoehe: 2200
+    web: https://www.goriz.es
+    telefon: "+34 974 341 201"
+    hinweis: Ankunft bis 19 Uhr, Abendessen um 19:30. Hüttenschlafsack oder Schlafsack ist Pflicht.
+    huette:
+      betreiber: Federación Aragonesa de Montañismo
+      saison: Das ganze Jahr bewirtschaftet
+      versorgung: bewirtschaftet
+      plaetze: { lager: 80 }
+      buchung: Nur online über alberguesyrefugios.com, Buchungen für 2027 ab dem 6. Januar.
+    quelle: https://www.goriz.es/el-refugio-de-goriz/
+    geprueft: "2026-10-31"
+  - id: lago-helado
+    name: Lago Helado
+    typ: see
+    lat: 42.68099
+    lon: 0.02642
+  - id: monte-perdido
+    name: Monte Perdido
+    typ: gipfel
+    lat: 42.67555
+    lon: 0.03436
+    hoehe: 3355
+    hinweis: Der dritthöchste Gipfel der Pyrenäen, nach Aneto und Posets.
+    quelle: https://www.miteco.gob.es/en/red-parques-nacionales/nuestros-parques/ordesa/guia-visitante/puntos-interes-monte-perdido.html
+    geprueft: "2026-10-31"
+  - id: breche-de-roland
+    name: Brèche de Roland
+    typ: pass
+    lat: 42.69108
+    lon: -0.03397
+    hoehe: 2807
+    hinweis: Eine Scharte im Grenzkamm, etwa 40 Meter breit und 100 Meter hoch.
+    quelle: https://www.miteco.gob.es/en/red-parques-nacionales/nuestros-parques/ordesa/guia-visitante/puntos-interes-monte-perdido.html
+    geprueft: "2026-10-31"
+  - id: refuge-breche-de-roland
+    name: Refuge de la Brèche de Roland
+    bild:
+      src: /bilder/orte/refuge-breche-de-roland.jpg
+      motiv: Der neue Bau der Refuge des Sarradets mit rostbrauner Fassade neben dem alten Steinhaus, dahinter die Felsgrate über dem Cirque de Gavarnie
+      format: quer
+      ausschnitt: 40% center
+      credit: Pacopac (Wikimedia Commons)
+      lizenz: CC BY-SA 4.0
+      quelle: "https://commons.wikimedia.org/wiki/File:2023-08-14_Refugi_de_Sarradets_01.jpg"
+    typ: huette
+    lat: 42.69592
+    lon: -0.03331
+    hoehe: 2587
+    web: https://refugebrechederoland.ffcam.fr
+    telefon: "+33 6 83 38 13 24"
+    hinweis: >-
+      Auch „Les Sarradets“. Spät im Jahr kann das Wasser knapp werden: 2026 schloss die Hütte deshalb schon am
+      18. September. Keine Dusche. Bezahlt wird bar oder per Scheck, nicht mit Karte.
+    huette:
+      betreiber: FFCAM (CAF Tarbes)
+      saison: Anfang Juni bis Ende September, je nach Verhältnissen
+      versorgung: bewirtschaftet
+      plaetze: { lager: 38 }
+      buchung: Online über das Reservierungssystem der FFCAM; orange markierte Tage telefonisch bei der Hütte.
+    quelle: https://refugebrechederoland.ffcam.fr
+    geprueft: "2026-10-31"
+  - id: taillon
+    name: Taillon
+    typ: gipfel
+    lat: 42.69364
+    lon: -0.05129
+    hoehe: 3144

@@ -16,7 +16,8 @@ the language they write. The site itself is always German, du-Form.
 
 ## The group and its decisions
 
-- Internal group: no sign-up, no prices, no forms. "Selling" a trip means making people want to come.
+- Internal group: no sign-up, no forms, no prices (a trip may show a rough cost estimate when the
+  owner asks). "Selling" a trip means making people want to come.
 - Planning limits per day (unless the owner says otherwise): max 17 km, 1100 Hm up, T3 (DAV red).
   Harder stretches only as flagged variants.
 - Start and end by public transport; staffed huts by default.
@@ -33,4 +34,9 @@ the language they write. The site itself is always German, du-Form.
 - `e5-oberstdorf-meran` – 6 days on the E5 (one-way; bus/taxi legs between walking legs; Pitztaler
   Jöchl is T4 in OSM and flagged).
 
-Status of both: planning; dates not set.
+- `pyrenaeen` – 7 walking days around Gavarnie, Vignemale, Ordesa and Monte Perdido (France/Spain), with
+  travel days by minibus (`plan`) and a cost estimate (`kosten`). Harder on purpose: own limits
+  25 km / 1600 Hm; Monte Perdido, the Brèche north side and the Taillon are T4 and flagged. Best in
+  the first half of September (Brèche hut water, ice on the Brèche).
+
+Status of all: planning; dates not set.

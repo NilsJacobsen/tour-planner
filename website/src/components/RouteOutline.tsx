@@ -106,6 +106,8 @@ export function RouteOutline({ karte, aktiv = null, mini = false, stil = "farbig
   const nummern: Box[] = linien.map((e) => ({ x0: e.nummer[0] - 11, y0: e.nummer[1] - 11, x1: e.nummer[0] + 11, y1: e.nummer[1] + 11 }));
   const titelBox: Box | null = titel ? { x0: 0, y0: 0, x1: 20 + titel.length * 10, y1: 50 } : null;
   const belegt: Box[] = titelBox ? [titelBox] : [];
+  // Other place markers count as taken (with some room), so a label never ends right at another hut.
+  const marker = karte.orte.map(({ ort }) => ({ id: ort.id, box: { x0: px(ort.lon) - 14, y0: py(ort.lat) - 9, x1: px(ort.lon) + 14, y1: py(ort.lat) + 9 } }));
   const labels = mini
     ? []
     : karte.orte.map(({ ort, rolle }) => {
@@ -126,7 +128,8 @@ export function RouteOutline({ karte, aktiv = null, mini = false, stil = "farbig
           const x0 = k.anker === "start" ? x + k.dx : x + k.dx - w;
           const box = { x0, x1: x0 + w, y0: y + k.dy - 11, y1: y + k.dy + 3 };
           const draussen = Math.max(0, -box.x0) + Math.max(0, box.x1 - breite) + Math.max(0, -box.y0) + Math.max(0, box.y1 - hoehe);
-          const wert = draussen * 50 + [...nummern, ...belegt].reduce((sum, b) => sum + ueberlappung(box, b), 0) + i;
+          const andere = marker.filter((m) => m.id !== ort.id).map((m) => m.box);
+          const wert = draussen * 50 + [...nummern, ...belegt, ...andere].reduce((sum, b) => sum + ueberlappung(box, b), 0) + i;
           if (!beste || wert < beste.wert) beste = { k, box, wert };
         }
         belegt.push(beste!.box);

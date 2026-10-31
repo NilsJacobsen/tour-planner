@@ -93,6 +93,34 @@ export const TourSchema = z.object({
     )
     .default([]),
   anforderungen: markdown.optional(),
+  // The whole trip including travel days (shown above the day table). Walking days point to their
+  // stage with `etappe`; travel and rest days have their own titel.
+  plan: z
+    .object({
+      hinweis: markdown.optional(), // e.g. how many days off work you need
+      tage: z
+        .array(
+          z
+            .object({
+              wochentag: z.string(), // "Fr", "Sa" … (the date isn't fixed yet)
+              etappe: z.number().int().optional(),
+              titel: z.string().optional(),
+              text: z.string().optional(),
+              nacht: z.string().optional(), // for travel days, e.g. "Camping"; walking days show their hut
+              link: z.url().optional(),
+            })
+            .refine((t) => t.etappe != null || t.titel, { message: "titel fehlt (oder etappe angeben)" }),
+        )
+        .min(1),
+    })
+    .optional(),
+  // A rough cost estimate per person (the group shares costs; nothing is booked or paid here).
+  kosten: z
+    .object({
+      hinweis: z.string().optional(),
+      posten: z.array(z.object({ name: z.string(), betrag: z.number() })).min(1),
+    })
+    .optional(),
   faq: z.array(z.object({ frage: z.string(), antwort: markdown })).default([]),
   packliste: z
     .object({

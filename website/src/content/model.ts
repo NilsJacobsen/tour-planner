@@ -613,6 +613,14 @@ export function buildSite(files: Files, urls: Record<string, string> = {}): { si
         fehler(next.datei, `Tag ${next.tag} beginnt in „${next.von.name}“, Tag ${e.tag} endet aber in „${e.nach.name}“`);
       }
     });
+    if (data.plan && !defekt) {
+      const imPlan = data.plan.tage.flatMap((t) => (t.etappe != null ? [t.etappe] : []));
+      for (const n of imPlan) if (!etappen.some((e) => e.tag === n)) fehler(tourDatei, `plan: Tag ${n} gibt es nicht`);
+      for (const e of etappen) {
+        const k = imPlan.filter((n) => n === e.tag).length;
+        if (k !== 1) warnung(tourDatei, `plan: Tag ${e.tag} kommt ${k}× vor (erwartet 1×)`);
+      }
+    }
     if (data.termin && etappen.length) {
       const last = addDays(data.termin.von, etappen.length - 1);
       if (last !== data.termin.bis) warnung(tourDatei, `termin.bis ist ${data.termin.bis}, nach ${etappen.length} Tagen wäre es ${last}`);
@@ -665,7 +673,10 @@ export function buildSite(files: Files, urls: Record<string, string> = {}): { si
     // A one-way trip also marks where it ends. A last night at the finish shows only as the finish.
     const ziel = etappen.at(-1)?.nach;
     const einweg = ziel && etappen.length && ziel.id !== etappen[0].von.id ? ziel : null;
-    for (const h of huetten) if (h.ort.id !== einweg?.id) karte.orte.push({ ort: h.ort, rolle: "huette" });
+    // A hut we sleep in twice (a summit day from the same hut) is drawn once.
+    for (const h of huetten) {
+      if (h.ort.id !== einweg?.id && !karte.orte.some((o) => o.ort.id === h.ort.id)) karte.orte.push({ ort: h.ort, rolle: "huette" });
+    }
     if (etappen.length) karte.orte.push({ ort: etappen[0].von, rolle: "start" });
     if (einweg) karte.orte.push({ ort: einweg, rolle: "ziel" });
     const extend = (lon: number, lat: number) => {
