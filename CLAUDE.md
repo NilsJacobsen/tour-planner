@@ -50,6 +50,11 @@ the language they write. The site itself is always German, du-Form.
   Comapedrosa summit, Vall del Madriu, Pessons lakes, l'Illa) to Porté-Puymorens and the Saturday night train; Andorra
   buses in between, one hotel night in Escaldes. Own limits 20 km / 1300 Hm / T3.
 
+- `pyrenaeen-ossau` – the western option: TGV to Pau, train and coach 550 to Canfranc station (night in the station
+  hotel); Anayet, Respomuso, Col d'Arrémoulit, the Petit train d'Artouste and gondola, Pombie under the Pic du Midi
+  d'Ossau, Ayous lakes, down the Chemin de la Mâture to Etsaut; night train from Pau. Own limits 20 km / 1300 Hm / T3;
+  Passage d'Orteig avoided. First half of September (Ayous closes late Sept).
+
 The two earlier test trips (Königssee, E5) were removed on 2026-11-01. The group travels from Munich.
 
 Status of all: planning; dates not set.

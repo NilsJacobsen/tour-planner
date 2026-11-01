@@ -152,5 +152,5 @@ await writeFile(path.join(root, "tour.md"), tour);
 for (let t = 1; t <= tage; t++) await writeFile(path.join(root, "etappen", `tag-${t}.md`), etappe(t));
 
 console.log(`Angelegt: content/touren/${slug}/ mit tour.md, ${tage} Etappen und routen/.`);
-console.log("Fehlende Orte in content/allgemein/orte.yaml eintragen (Koordinaten: node scripts/find.mjs "<Name>").");
+console.log('Fehlende Orte in content/allgemein/orte.yaml eintragen (Koordinaten: node scripts/find.mjs "<Name>").');
 console.log("Dann TODOs füllen, GPX routen und npm run check, bis es 0 Fehler meldet.");
