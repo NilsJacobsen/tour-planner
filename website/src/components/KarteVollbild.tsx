@@ -1,4 +1,4 @@
-// The whole trip on a real map, full screen: opened from the overview card. Scroll or pinch to zoom,
+// The whole trip on a real map, full screen: opened by the icon next to "Übersicht" on the overview card. Scroll or pinch to zoom,
 // drag to move, Esc or "Schließen" to close. Clicking a day's line opens that day.
 import { useEffect, useMemo, useRef } from "react";
 import { useNavigate } from "react-router";
@@ -70,7 +70,7 @@ export function KarteVollbild({ tour, offen, onClose }: { tour: TourView; offen:
           />
         )}
       </div>
-      <p className="vollbild-hinweis">Scrollen oder ziehen, um die Karte zu bewegen. Eine Linie antippen öffnet den Tag.</p>
+      <p className="vollbild-hinweis">Zoomen und ziehen, um die Karte zu bewegen. Ein Klick auf eine Linie öffnet den Tag.</p>
     </dialog>
   );
 }

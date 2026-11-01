@@ -22,13 +22,14 @@ type Props = {
   kartenelemente?: boolean; // km grid, north arrow and scale bar, like a printed map
   maxHoehe?: number; // px; taller routes are scaled down to fit
   titel?: string; // small label in the top-left corner of the drawing (route and labels keep clear)
+  onVollbild?: () => void; // shows a small full-screen button right after the title
 };
 
 const R_ERDE = 6371000;
 const STUFEN_KM = [0.25, 0.5, 1, 2, 5, 10, 20, 50];
 const kmText = (k: number) => `${k.toLocaleString("de-DE")} km`;
 
-export function RouteOutline({ karte, aktiv = null, mini = false, stil = "farbig", onSelect, onHover, className, kartenelemente = false, titel, maxHoehe }: Props) {
+export function RouteOutline({ karte, aktiv = null, mini = false, stil = "farbig", onSelect, onHover, className, kartenelemente = false, titel, maxHoehe, onVollbild }: Props) {
   const mono = stil === "mono";
   const schraffur = `schraffur${useId().replace(/[^a-zA-Z0-9_-]/g, "")}`;
   const ref = useRef<HTMLDivElement>(null);
@@ -104,7 +105,9 @@ export function RouteOutline({ karte, aktiv = null, mini = false, stil = "farbig
   type Box = { x0: number; y0: number; x1: number; y1: number };
   const ueberlappung = (a: Box, b: Box) => Math.max(0, Math.min(a.x1, b.x1) - Math.max(a.x0, b.x0)) * Math.max(0, Math.min(a.y1, b.y1) - Math.max(a.y0, b.y0));
   const nummern: Box[] = linien.map((e) => ({ x0: e.nummer[0] - 11, y0: e.nummer[1] - 11, x1: e.nummer[0] + 11, y1: e.nummer[1] + 11 }));
-  const titelBox: Box | null = titel ? { x0: 0, y0: 0, x1: 20 + titel.length * 10, y1: 50 } : null;
+  // Mono 16px uppercase with letter spacing: about 10.3 px per character.
+  const titelEnde = titel ? 20 + titel.length * 10.3 : 0;
+  const titelBox: Box | null = titel ? { x0: 0, y0: 0, x1: titelEnde + (onVollbild ? 48 : 0), y1: 50 } : null;
   const belegt: Box[] = titelBox ? [titelBox] : [];
   // Other place markers count as taken (with some room), so a label never ends right at another hut.
   const marker = karte.orte.map(({ ort }) => ({ id: ort.id, box: { x0: px(ort.lon) - 14, y0: py(ort.lat) - 9, x1: px(ort.lon) + 14, y1: py(ort.lat) + 9 } }));
@@ -283,6 +286,21 @@ export function RouteOutline({ karte, aktiv = null, mini = false, stil = "farbig
           <text x={20} y={37.5} className="umriss-titel">
             {titel}
           </text>
+        )}
+        {titel && onVollbild && (
+          <g
+            className="umriss-vollbild"
+            transform={`translate(${titelEnde + 10},16)`}
+            role="button"
+            tabIndex={0}
+            aria-label="Karte im Vollbild öffnen"
+            onClick={onVollbild}
+            onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && (e.preventDefault(), onVollbild())}
+          >
+            <title>Karte im Vollbild öffnen</title>
+            <rect width="30" height="30" rx="8" />
+            <path d="M9,13V9H13M17,9H21V13M21,17V21H17M13,21H9V17" />
+          </g>
         )}
         {kartenelemente && (
           <>

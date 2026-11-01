@@ -87,6 +87,7 @@ function RundeKarte({ tour }: { tour: TourView }) {
       <Feld name="abgeleitet: Umriss aus GPX + karte.geojson" className="runde-umriss">
         <RouteOutline
           titel="Übersicht"
+          onVollbild={() => setVollbild(true)}
           maxHoehe={520}
           karte={tour.karte}
           stil="mono"
@@ -124,11 +125,6 @@ function RundeKarte({ tour }: { tour: TourView }) {
             <rect x="5.5" y="0.5" width="7" height="7" className="leg-huette" />
           </svg>
           Übernachtung
-        </li>
-        <li className="runde-vergroessern">
-          <button type="button" onClick={() => setVollbild(true)}>
-            <span aria-hidden="true">⤢</span> Karte vergrößern
-          </button>
         </li>
       </ul>
       <KarteVollbild tour={tour} offen={vollbild} onClose={() => setVollbild(false)} />
