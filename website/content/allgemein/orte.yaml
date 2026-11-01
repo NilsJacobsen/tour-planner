@@ -444,3 +444,115 @@ orte:
     hinweis: Hier malten Matisse und Derain im Sommer 1905 – der Anfang des Fauvismus.
     quelle: https://www.tourisme-collioure.com/mon-collioure/racontez-moi-le-fauvisme/
     geprueft: "2026-11-01"
+
+  # --- Quer durch die Pyrenäen (pyrenaeen-quer)
+  - id: lourdes
+    name: Bahnhof Lourdes
+    typ: ort
+    lat: 43.09992
+    lon: -0.04270
+  - id: cauterets
+    name: Cauterets
+    typ: ort
+    lat: 42.89188
+    lon: -0.11417
+  - id: pont-d-espagne
+    name: Pont d'Espagne
+    typ: ort
+    lat: 42.85160
+    lon: -0.13674
+    hinweis: >-
+      Endstation des Pendelbusses aus Cauterets. Hier fahren eine Kabinenbahn und der Sessellift zum Lac de Gaube
+      (2026 täglich vom 14. Mai bis 27. September, hin und zurück 17 €).
+    quelle: https://www.cauterets.com/app/uploads/2026/04/plan-pontespagne-ete-2026-vdef-fr-web.pdf
+    geprueft: "2026-11-01"
+  - id: lac-de-gaube
+    name: Lac de Gaube
+    typ: see
+    lat: 42.83143
+    lon: -0.13964
+  - id: hotellerie-du-cirque
+    name: Hôtellerie du Cirque
+    typ: aussicht
+    lat: 42.70435
+    lon: -0.00811
+  - id: torla
+    name: Torla (Busbahnhof Ordesa)
+    typ: ort
+    lat: 42.62769
+    lon: -0.11214
+    hinweis: >-
+      Vom Parkplatz in Torla fährt der Nationalpark-Bus zur Pradera de Ordesa – die Straße ins Tal ist dann für Autos
+      gesperrt. Wird es im Tal zu voll, hält der Bus an, und auch ein Ticket garantiert dann keinen Platz.
+    quelle: https://ordesabus.com/bus-acceso-parking/
+    geprueft: "2026-11-01"
+  - id: mirador-de-calcilarruego
+    name: Mirador de Calcilarruego
+    typ: aussicht
+    lat: 42.64142
+    lon: -0.05412
+  - id: faja-de-pelay
+    name: Faja de Pelay
+    typ: aussicht
+    lat: 42.63090
+    lon: -0.01968
+  - id: toulouse
+    name: Toulouse-Matabiau
+    typ: ort
+    lat: 43.61143
+    lon: 1.45421
+  - id: latour-de-carol
+    name: Bahnhof Latour-de-Carol-Enveitg
+    typ: ort
+    lat: 42.45905
+    lon: 1.90447
+  - id: ribes-enllac
+    name: Ribes-Enllaç
+    typ: ort
+    lat: 42.29973
+    lon: 2.16606
+  - id: queralbs
+    name: Queralbs (Zahnradbahn)
+    typ: bahn
+    lat: 42.35137
+    lon: 2.16566
+    hinweis: >-
+      Zwischenstation der Zahnradbahn nach Núria, Ausgangspunkt des alten Fußwegs. Von Queralbs nach Núria kostete
+      die Fahrt 2026 einfach 21,50 €.
+    quelle: https://turistren.cat/wp-content/uploads/2026/04/VdNcremallera_tarifes_horaris_primavera-estiu-tardor26_sense-marques-de-tall.pdf
+    geprueft: "2026-11-01"
+  - id: villefranche-de-conflent
+    name: Bahnhof Villefranche-Vernet-les-Bains
+    typ: ort
+    lat: 42.59173
+    lon: 2.37032
+  - id: fort-saint-elme
+    name: Fort Saint-Elme
+    typ: aussicht
+    lat: 42.51864
+    lon: 3.09388
+  - id: port-vendres
+    name: Port-Vendres
+    typ: ort
+    lat: 42.52041
+    lon: 3.10562
+  - id: cap-bear
+    name: Cap Béar
+    typ: aussicht
+    lat: 42.51557
+    lon: 3.13669
+  - id: paulilles
+    name: Anse de Paulilles
+    typ: aussicht
+    lat: 42.50255
+    lon: 3.12551
+    hinweis: >-
+      Ehemalige Dynamitfabrik in einer Badebucht, 1870 bis 1984 in Betrieb, heute ein geschütztes Gelände mit Museum.
+      2026 täglich 9–19 Uhr offen, Eintritt frei. Hunde sind dort ganzjährig verboten.
+    quelle: https://www.tourisme-pyreneesorientales.com/site-classe-de-lanse-de-paulilles/port-vendres/pnalar066fs0001p
+    geprueft: "2026-11-01"
+  - id: banyuls
+    name: Banyuls-sur-Mer
+    typ: ort
+    lat: 42.48288
+    lon: 3.12617

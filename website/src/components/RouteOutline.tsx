@@ -108,9 +108,12 @@ export function RouteOutline({ karte, aktiv = null, mini = false, stil = "farbig
   const belegt: Box[] = titelBox ? [titelBox] : [];
   // Other place markers count as taken (with some room), so a label never ends right at another hut.
   const marker = karte.orte.map(({ ort }) => ({ id: ort.id, box: { x0: px(ort.lon) - 14, y0: py(ort.lat) - 9, x1: px(ort.lon) + 14, y1: py(ort.lat) + 9 } }));
+  // Start and end are labelled first; a hut label that finds no free spot is left out (on wide
+  // trips the huts of one valley sit almost on top of each other, the day numbers still show them).
+  const reihenfolge = [...karte.orte].sort((a, b) => Number(a.rolle === "huette") - Number(b.rolle === "huette"));
   const labels = mini
     ? []
-    : karte.orte.map(({ ort, rolle }) => {
+    : reihenfolge.flatMap(({ ort, rolle }) => {
         const x = px(ort.lon);
         const y = py(ort.lat);
         const text = kurzName(ort.name);
@@ -132,8 +135,10 @@ export function RouteOutline({ karte, aktiv = null, mini = false, stil = "farbig
           const wert = draussen * 50 + [...nummern, ...belegt, ...andere].reduce((sum, b) => sum + ueberlappung(box, b), 0) + i;
           if (!beste || wert < beste.wert) beste = { k, box, wert };
         }
+        const k = beste!.k;
+        if (rolle === "huette" && beste!.wert - kandidaten.indexOf(k) > 40) return [];
         belegt.push(beste!.box);
-        return { ort, rolle, x, y, text, dx: beste!.k.dx, dy: beste!.k.dy, anker: beste!.k.anker };
+        return [{ ort, rolle, x, y, text, dx: k.dx, dy: k.dy, anker: k.anker }];
       });
 
   // Scale: in Web Mercator one pixel covers R·cos(lat)/s metres on the ground. The bar is about a

@@ -40,6 +40,12 @@ the language they write. The site itself is always German, du-Form.
   Group limits; best in the second half of September (fire map until mid-Sept, huts and Train Jaune
   until about 27 Sept).
 
+- `pyrenaeen-quer` – the "best of" crossing by train: 8 walking days from Lac de Gaube/Vignemale over the Col des
+  Mulets, the Faja de Pelay (Ordesa), the Brèche de Roland (Taillon as the one optional summit) and the Cirque de
+  Gavarnie; then by train via Toulouse, Latour-de-Carol and the Núria rack railway; Núria → Coll de Núria → Train
+  Jaune; last day on foot along the coast from Collioure to Banyuls. Own limits 20 km / 1300 Hm / T3 (owner allowed
+  some harder days and short T4). Best in the first half of September.
+
 The two earlier test trips (Königssee, E5) were removed on 2026-11-01. The group travels from Munich.
 
 Status of all: planning; dates not set.
