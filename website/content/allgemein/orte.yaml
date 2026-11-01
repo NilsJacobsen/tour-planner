@@ -444,3 +444,278 @@ orte:
     hinweis: Hier malten Matisse und Derain im Sommer 1905 – der Anfang des Fauvismus.
     quelle: https://www.tourisme-collioure.com/mon-collioure/racontez-moi-le-fauvisme/
     geprueft: "2026-11-01"
+  # --- pyrenaeen-andorra ---
+  - id: l-hospitalet
+    name: Bahnhof Andorre-L'Hospitalet
+    bild:
+      src: /bilder/orte/l-hospitalet.jpg
+      motiv: "Der Bahnhof Andorre-L'Hospitalet mit Bahnsteig und Bahnhofsgebäude, ein Zug fährt ein; dahinter ein steiler Berg"
+      format: quer
+      credit: Carsten Pietzsch (Wikimedia Commons)
+      lizenz: CC0
+      quelle: "https://commons.wikimedia.org/wiki/File:Gare_d%27Andorre_-_L%27Hospitalet_-_01.jpg"
+    typ: ort
+    lat: 42.58949
+    lon: 1.80039
+    hinweis: >-
+      Bahnhof an der Strecke Toulouse–Latour-de-Carol, die seit 1929 bis an die spanische Grenze führt. Hier hält auch
+      der Nachtzug von und nach Paris.
+    quelle: https://en.wikipedia.org/wiki/Portet-Saint-Simon%E2%80%93Puigcerd%C3%A0_railway
+    geprueft: "2026-11-01"
+  - id: gite-l-hospitalite
+    name: Gîte l'Hospitalité (L'Hospitalet)
+    typ: huette
+    lat: 42.58758
+    lon: 1.79835
+    web: https://mairie-hospitalet.fr/gite-detape-et-de-sejour-lhospitalite/
+    telefon: "+33 6 74 87 05 05"
+    hinweis: >-
+      Gîte d'étape der Gemeinde, ein paar Minuten zu Fuß vom Bahnhof. Fatima kocht selbst. Laut refuges.info ist sie das
+      ganze Jahr offen, mit Halbpension; einen Hüttenschlafsack bringt man mit. Preis und Öffnung im September fragen wir an. Gleich daneben das Hôtel du Puymorens
+      (+33 5 61 05 20 03) als Ausweich.
+    huette:
+      betreiber: Gemeinde L'Hospitalet-près-l'Andorre
+      versorgung: bewirtschaftet
+      buchung: Telefonisch oder per E-Mail an ribeironunes@orange.fr.
+    quelle: https://mairie-hospitalet.fr/gite-detape-et-de-sejour-lhospitalite/
+    geprueft: "2026-11-01"
+  - id: col-de-l-albe
+    name: Col de l'Albe
+    typ: pass
+    lat: 42.61525
+    lon: 1.73598
+    hoehe: 2539
+    hinweis: Grenze zwischen Frankreich und Andorra, auf Katalanisch Coll de l'Alba.
+  - id: estany-de-juclar
+    name: Estany Primer de Juclar
+    typ: see
+    lat: 42.61013
+    lon: 1.71876
+    hinweis: Mit 21 Hektar der größte See Andorras.
+    quelle: https://visitandorra.com/en/nature/lakes/
+    geprueft: "2026-11-01"
+  - id: refugi-juclar
+    name: Refugi de Juclar
+    bild:
+      src: /bilder/orte/refugi-juclar.jpg
+      motiv: "Blick aus der Nähe der Hütte Juclar: ein gepflasterter Pfad, Schneereste und der See unter den Zacken des Pic d'Escobes"
+      format: quer
+      credit: Jalturgell (Wikimedia Commons)
+      lizenz: CC BY-SA 4.0
+      quelle: "https://commons.wikimedia.org/wiki/File:Pic_d%27Escobes.jpg"
+    typ: huette
+    lat: 42.60739
+    lon: 1.71563
+    hoehe: 2310
+    web: https://www.refugidejuclar.com/
+    telefon: "+376 678 145"
+    hinweis: >-
+      Halbpension 56 €, für Mitglieder eines Bergvereins 53 € (kein Jahr angegeben). Bezahlt wird nur bar, nicht mit Karte.
+      Solardusche. Die Regierung von Andorra nennt als Saison nur 15. Juni bis 15. September – das klären wir bei der
+      Buchung, ebenso, wie früh es Frühstück gibt.
+    huette:
+      saison: "1. Juni bis Ende Oktober (Website der Hütte, ohne Jahresangabe)"
+      versorgung: bewirtschaftet
+      plaetze: { lager: 43 }
+      buchung: Über das Formular der Website, per Telefon oder per E-Mail an refugidejuclar@gmail.com.
+    quelle: https://www.refugidejuclar.com/
+    geprueft: "2026-11-01"
+  - id: collada-de-meners
+    name: Collada de Meners
+    typ: pass
+    lat: 42.62110
+    lon: 1.60609
+    quelle: https://visitandorra.com/en/nature--sports/hiking-route-coronallacs/
+    geprueft: "2026-11-01"
+  - id: incles
+    name: Vall d'Incles (Bushaltestelle)
+    typ: ort
+    lat: 42.58389
+    lon: 1.66340
+    hinweis: Haltestelle an der Hauptstraße CG-2 zwischen Soldeu und Canillo, Linie L4 nach Andorra la Vella.
+    quelle: https://www.govern.ad/documents/d/guest/bus_linies_nacionals
+    geprueft: "2026-11-01"
+  - id: refugi-sorteny
+    name: Refugi de Sorteny
+    bild:
+      src: /bilder/orte/refugi-sorteny.jpg
+      motiv: "Das Steinhaus des Refugi de Sorteny in einer Blumenwiese, dahinter der bewaldete Hang des Tals"
+      format: quer
+      ausschnitt: "60% 60%"
+      credit: Ferran Llorens (Wikimedia Commons)
+      lizenz: CC BY-SA 2.0
+      quelle: "https://commons.wikimedia.org/wiki/File:Vall_de_Sorteny_(Ordino)_-_33.jpg"
+    typ: huette
+    lat: 42.62255
+    lon: 1.56417
+    hoehe: 1965
+    web: https://refugisorteny.com/
+    telefon: "+376 846 446"
+    hinweis: >-
+      Die Hütte des Naturparks Sorteny, fünf Zimmer. Halbpension mit Dusche 70 €, für Mitglieder
+      eines Bergvereins 63 € (Preise 2026). Ankunft bitte vor 18 Uhr. Wer weniger als sechs Tage vorher absagt, bekommt nichts zurück.
+    huette:
+      saison: "2026: 1. Juni bis Ende Oktober"
+      versorgung: bewirtschaftet
+      buchung: Über das Formular auf refugisorteny.com oder telefonisch.
+    quelle: https://refugisorteny.com/tarifes-horaris
+    geprueft: "2026-11-01"
+  - id: el-serrat
+    name: El Serrat (Bushaltestelle Sant Pere)
+    typ: ort
+    lat: 42.61841
+    lon: 1.53827
+    hinweis: >-
+      Hier fährt der Gemeindebus von Ordino ab (0,20 €). Bis Sorteny fuhr er 2026 nur im Hochsommer bis Anfang
+      September, deshalb gehen wir das Stück zu Fuß.
+    quelle: https://www.ordino.ad/comu/atencio-ciutadana-servei-circulacio/img/buscomunal.jpg
+    geprueft: "2026-11-01"
+  - id: arinsal
+    name: Arinsal (Bushaltestelle Aparcament)
+    typ: ort
+    lat: 42.57804
+    lon: 1.47905
+    hinweis: Endhaltestelle der Buslinie L5 nach La Massana und Andorra la Vella.
+    quelle: https://bus.ad/linia-andorra-arinsal/
+    geprueft: "2026-11-01"
+  - id: refugi-comapedrosa
+    name: Refugi de Comapedrosa
+    bild:
+      src: /bilder/orte/refugi-comapedrosa.jpg
+      motiv: "Das Refugi de Comapedrosa, ein Steinbau mit Terrasse auf einer Wiese, dahinter das Tal von Arinsal"
+      format: quer
+      ausschnitt: "35% 55%"
+      credit: Ferran Llorens (Wikimedia Commons)
+      lizenz: CC BY-SA 2.0
+      quelle: "https://commons.wikimedia.org/wiki/File:Valls_del_Comapedrosa_(la_Massana)_-_5.jpg"
+    typ: huette
+    lat: 42.57901
+    lon: 1.44936
+    hoehe: 2260
+    web: https://refugicomapedrosa.ad/
+    telefon: "+376 327 955"
+    hinweis: >-
+      Halbpension 55,80 € (Saison 2026), Leihbettwäsche 10,85 €, Abendessen um 19:30. Solarduschen. Die Regierung von
+      Andorra nennt als Saison nur 15. Juni bis 15. September.
+    huette:
+      saison: "2026: 1. Juni bis 12. Oktober"
+      versorgung: bewirtschaftet
+      plaetze: { lager: 45 }
+      buchung: Online unter reserves.refugicomapedrosa.ad, per Telefon (9–19 Uhr) oder per E-Mail an info@refugicomapedrosa.com.
+    quelle: https://refugicomapedrosa.ad/
+    geprueft: "2026-11-01"
+  - id: estany-negre-comapedrosa
+    name: Estany Negre
+    typ: see
+    lat: 42.58789
+    lon: 1.43727
+    hoehe: 2636
+  - id: comapedrosa
+    name: Pic de Comapedrosa
+    typ: gipfel
+    lat: 42.59180
+    lon: 1.44366
+    hoehe: 2942
+    hinweis: Der höchste Berg Andorras.
+    quelle: https://refugicomapedrosa.ad/
+    geprueft: "2026-11-01"
+  - id: escaldes
+    name: Hotel in Escaldes-Engordany
+    bild:
+      src: /bilder/orte/escaldes-caldea.jpg
+      motiv: "Die Glaspyramiden der Therme Caldea in Escaldes mit ihrem spitzen Turm, davor der Fluss"
+      format: quer
+      ausschnitt: "60% 50%"
+      credit: FrankAndProust (Wikimedia Commons)
+      lizenz: CC0
+      quelle: "https://commons.wikimedia.org/wiki/File:Caldea_20231205_122111.jpg"
+    typ: ort
+    lat: 42.51073
+    lon: 1.54211
+    hinweis: >-
+      Eine Nacht im Tal, ein paar Minuten zu Fuß von der Therme Caldea. Infrage kommt zum Beispiel das Hotel Espel
+      (84 Zimmer, Doppel-, Dreier- und Viererzimmer, +376 820 855). Preise für September stehen nirgends, wir fragen an.
+    huette:
+      versorgung: bewirtschaftet
+    quelle: https://www.hotelespel.com/
+    geprueft: "2026-11-01"
+  - id: font-de-la-closa
+    name: Font de la Closa (Engolasters)
+    typ: ort
+    lat: 42.50881
+    lon: 1.56367
+    hinweis: >-
+      Picknickplatz über Escaldes und Endhaltestelle der kostenlosen Gemeindebuslinie E (Engolasters) ab Caldea.
+    quelle: https://e-e.ad/publicacio/6632/el-nou-bus-comunal-amb-tres-linies-regulars-sortira-cada-hora-des-de-la-parada-de-caldea
+    geprueft: "2026-11-01"
+  - id: ramio
+    name: Ràmio
+    typ: ort
+    lat: 42.49746
+    lon: 1.57251
+    hinweis: Weiler am Eingang der Vall del Madriu.
+  - id: refugi-illa
+    name: Refugi de l'Illa
+    bild:
+      src: /bilder/orte/refugi-illa.jpg
+      motiv: "Der Estany de l'Illa, an dem die Hütte steht, von oben auf dem Weg Richtung Pessons; vorn zwei Wanderer"
+      format: quer
+      credit: Bernardo Reis (Wikimedia Commons)
+      lizenz: CC BY-SA 3.0
+      quelle: "https://commons.wikimedia.org/wiki/File:Vista_de_Estany_de_L%27Illa_-_A_Caminho_do_Pic_de_Pessons_-_panoramio.jpg"
+    typ: huette
+    lat: 42.49501
+    lon: 1.65642
+    hoehe: 2488
+    web: https://www.refugidelilla.ad/
+    telefon: "+376 775 776"
+    hinweis: >-
+      Ganz oben in der Vall del Madriu, die Hütte gehört der Gemeinde Encamp. Die Regierung nennt 50 Plätze, aber nur
+      vier Zimmer mit acht und eines mit zehn – das fragen wir nach. Duschen. Den Preis für die Halbpension 2026 haben wir nicht gefunden.
+    huette:
+      betreiber: Comú d'Encamp
+      saison: Erster Samstag im Juni bis 1. November
+      versorgung: bewirtschaftet
+      plaetze: { lager: 50 }
+      buchung: Per Telefon oder per E-Mail an refugidelilla@refugidelilla.ad.
+    quelle: https://www.govern.ad/ca/tematiques/medi-ambient-i-sostenibilitat/refugis-i-grs/refugis-d-andorra-refugis-guardats-d-andorra
+    geprueft: "2026-11-01"
+  - id: collada-dels-pessons
+    name: Collada dels Pessons
+    typ: pass
+    lat: 42.50933
+    lon: 1.65866
+    hoehe: 2814
+  - id: estany-rodo-pessons
+    name: Estany Rodó (Pessons)
+    typ: see
+    lat: 42.52188
+    lon: 1.68013
+    hoehe: 2373
+  - id: collada-de-montmalus
+    name: Collada de Montmalús
+    typ: pass
+    lat: 42.50809
+    lon: 1.68957
+    hoehe: 2703
+  - id: portella-blanca
+    name: Portella Blanca d'Andorra
+    typ: pass
+    lat: 42.50467
+    lon: 1.72563
+    hinweis: >-
+      Hier treffen sich Andorra, Spanien und Frankreich. Je nach Karte liegt der Pass auf 2.515 bis 2.521 m.
+    quelle: https://fr.wikipedia.org/wiki/Portella_Blanca_d%27Andorra
+    geprueft: "2026-11-01"
+  - id: porte-puymorens
+    name: Bahnhof Porté-Puymorens
+    typ: ort
+    lat: 42.53878
+    lon: 1.82485
+    hoehe: 1563
+    hinweis: >-
+      Kleiner Bahnhof am Südende des Puymorens-Tunnels. Hier hält samstags abends der Nachtzug nach Paris. Ein Café am
+      Bahnhof, das im September offen hat, haben wir nicht gefunden; eine Gaststätte, die 2026 ab September offen hatte, ist die Auberge du
+      Campcardos im Nachbardorf Porta.
+    quelle: https://www.visorando.com/randonnee-du-refuge-de-l-illa-a-porte-puymorens-sn/
+    geprueft: "2026-11-01"
