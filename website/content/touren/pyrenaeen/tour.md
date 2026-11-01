@@ -1,6 +1,6 @@
 ---
-titel: "Pyrenäen: Vignemale und Monte Perdido"
-untertitel: Von Hütte zu Hütte rund um Gavarnie – zweimal zu Fuß über die Grenze, durch den Canyon von Ordesa, auf bis zu drei Dreitausender und am Ende ans Meer.
+titel: "Gipfelwoche um Gavarnie"
+untertitel: "Für alle, die oben stehen wollen: bis zu drei Dreitausender, darunter der Monte Perdido, zweimal zu Fuß über die Grenze und durch den Canyon von Ordesa – mit dem Minibus hin und zurück und einem Abend am Meer."
 region: Pyrenäen · Frankreich und Spanien · Nationalparks Pyrénées und Ordesa y Monte Perdido
 status: planung
 stand: "2026-10-31"

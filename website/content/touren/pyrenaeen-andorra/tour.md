@@ -1,6 +1,6 @@
 ---
-titel: "Pyrenäen mit dem Zug: Quer durch Andorra"
-untertitel: Mit dem Zug bis an die Grenze, zu Fuß über die Pässe nach Andorra, von See zu See, auf den höchsten Gipfel des Landes, durch ein Welterbe-Tal – und mit dem Nachtzug zurück.
+titel: "Von See zu See durch Andorra"
+untertitel: "Eine Woche von Bergsee zu Bergsee: über die Pässe nach Andorra, auf seinen höchsten Gipfel, durch ein Tal, das UNESCO-Welterbe ist, und zur Halbzeit ein Abend in der Therme Caldea – hin mit dem Zug, zurück im Nachtzug."
 region: Ariège (Frankreich) · Andorra · Cerdanya (Spanien)
 status: planung
 stand: "2026-11-01"

@@ -1,6 +1,6 @@
 ---
-titel: "Pyrenäen mit dem Zug: Von Núria zum Canigó"
-untertitel: Mit TGV und Gelbem Zug in die Ostpyrenäen, zu Fuß über die Grenze nach Núria und zurück, auf den Puigmal, unter den Canigó – und am Ende baden im Mittelmeer.
+titel: "Mit dem Gelben Zug zum Canigó"
+untertitel: "Die entspannte Woche ohne Auto und ohne Steigeisen: mit dem Zug von München in die Ostpyrenäen, zu Fuß ins Tal von Núria, zu dem keine Straße führt, unter den heiligen Berg der Katalanen – und am Ende baden in Collioure."
 region: Ostpyrenäen · Katalonien (Spanien) und Pyrénées-Orientales (Frankreich)
 status: planung
 stand: "2026-11-01"
