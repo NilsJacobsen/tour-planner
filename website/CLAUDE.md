@@ -124,7 +124,8 @@ files — the same code runs in the browser and in `npm run check`.
 
 ## Trip page
 
-One layout: photo hero (title, numbers, overview card with route drawing and day profiles) →
+One layout: photo hero (title, numbers, overview card with route drawing and day profiles; "Karte vergrößern"
+opens the whole trip on a real map in a full-screen dialog, `KarteVollbild.tsx`) →
 section chips → "Darum diese Tour" with highlights → "Tag für Tag" as a table linking to each day →
 "Ist das was für mich?" → Übernachtungen → Praktisches → FAQ → Quellen & Stand. (Earlier layout
 experiments — map as hero, day cards, scroll story — were dropped on purpose; don't bring them back

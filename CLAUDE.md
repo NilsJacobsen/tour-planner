@@ -46,6 +46,10 @@ the language they write. The site itself is always German, du-Form.
   Jaune; last day on foot along the coast from Collioure to Banyuls. Own limits 20 km / 1300 Hm / T3 (owner allowed
   some harder days and short T4). Best in the first half of September.
 
+- `pyrenaeen-andorra` – by train to L'Hospitalet: 7 walking days through Andorra's lake country (Juclar, Sorteny,
+  Comapedrosa summit, Vall del Madriu, Pessons lakes, l'Illa) to Porté-Puymorens and the Saturday night train; Andorra
+  buses in between, one hotel night in Escaldes. Own limits 20 km / 1300 Hm / T3.
+
 The two earlier test trips (Königssee, E5) were removed on 2026-11-01. The group travels from Munich.
 
 Status of all: planning; dates not set.

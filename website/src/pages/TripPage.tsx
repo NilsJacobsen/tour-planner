@@ -7,6 +7,7 @@ import { DAV_FARBE, GRADE_NAME, MITTEL, STATUS, VERSORGUNG } from "../text.ts";
 import { Feld, Fehlt } from "../wireframe.tsx";
 import { Bild, GradeBadge, GradeMix, InfoLink, Kondition, Markdown, TagNr } from "../components/basics.tsx";
 import { HutCard } from "../components/HutCard.tsx";
+import { KarteVollbild } from "../components/KarteVollbild.tsx";
 import { RouteOutline } from "../components/RouteOutline.tsx";
 import { StageChips } from "../components/StageChips.tsx";
 import { Tagesprofile } from "../components/Tagesprofile.tsx";
@@ -79,6 +80,7 @@ function TitelBlock({ tour }: { tour: TourView }) {
 function RundeKarte({ tour }: { tour: TourView }) {
   const navigate = useNavigate();
   const [aktiv, setAktiv] = useState<number | null>(null);
+  const [vollbild, setVollbild] = useState(false);
   const hatVarianten = tour.karte.etappen.some((e) => e.varianten.length > 0);
   return (
     <div className="runde-karte">
@@ -123,7 +125,13 @@ function RundeKarte({ tour }: { tour: TourView }) {
           </svg>
           Übernachtung
         </li>
+        <li className="runde-vergroessern">
+          <button type="button" onClick={() => setVollbild(true)}>
+            <span aria-hidden="true">⤢</span> Karte vergrößern
+          </button>
+        </li>
       </ul>
+      <KarteVollbild tour={tour} offen={vollbild} onClose={() => setVollbild(false)} />
       <Feld name="abgeleitet: Höhenprofil je Tag">
         <Tagesprofile tour={tour} aktiv={aktiv} onAktiv={setAktiv} />
       </Feld>
