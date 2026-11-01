@@ -42,6 +42,8 @@ const tour = `---
 # Trip page. Field reference: src/content/schema.ts (TourSchema). Example: the Pyrenees trip (content/touren/pyrenaeen).
 titel: "${titel}"
 untertitel: TODO – ein Satz, der Lust macht (wird unter dem Titel und auf der Startseite gezeigt)
+gebirge: TODO – das Gebirge für das Etikett auf der Tourenkarte, z. B. Pyrenäen oder Alpen
+laender: [TODO] # Länder in Reihenfolge, z. B. [de, at] – Flaggen im Etikett
 region: TODO – Gebirgsgruppe(n) · Land
 status: planung # planung | fix | vorbei
 stand: "${heute}" # date of the last content update

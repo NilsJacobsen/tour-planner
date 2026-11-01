@@ -63,9 +63,14 @@ export const PacklisteSchema = z.object({
 export const InfoSchema = z.object({ titel: z.string(), kurz: z.string().optional() });
 
 // --- Trip
+export const LAENDER = ["de", "at", "ch", "it", "fr", "es", "ad", "si"] as const;
+export type Land = (typeof LAENDER)[number];
+
 export const TourSchema = z.object({
   titel: z.string(),
   untertitel: z.string(),
+  gebirge: z.string(), // mountain range, shown as a tag on the trip card (e.g. "Pyrenäen")
+  laender: z.array(z.enum(LAENDER)).min(1), // countries the trip walks through, in order: flags in that tag
   region: z.string(),
   status: z.enum(["planung", "fix", "vorbei"]),
   stand: datum, // last content update, shown as "Stand"

@@ -38,6 +38,11 @@ touren/<slug>/karte.geojson      lake outlines for the route drawing (scripts/os
 The schema is `src/content/schema.ts` (zod). `src/content/model.ts` builds everything from the
 files — the same code runs in the browser and in `npm run check`.
 
+### Trip card tag
+
+`gebirge` (e.g. `Pyrenäen`) and `laender` (countries in walking order, e.g. `[fr, es]`) are required in `tour.md`;
+the trip list shows them as a tag with small SVG flags (`src/components/Flagge.tsx`) on the card photo.
+
 ### Optional trip blocks
 
 - `plan`: the whole trip day by day, travel days included (`wochentag`, then `etappe: N` for a

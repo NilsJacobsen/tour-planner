@@ -455,7 +455,11 @@ code { font: 12px var(--mono); }
 /* --- Home, info, dev pages */
 .touren-liste { list-style: none; padding: 0; margin: 32px 0 0; display: grid; gap: 32px; }
 .tour-karte-link { display: grid; text-decoration: none; border: 1px solid var(--stone-200); border-radius: var(--radius); overflow: hidden; background: #fff; }
-.tour-karte-link > .bild { border-radius: 0; border: 0; }
+.tour-karte-link > .bild, .tour-karte-foto > .bild { border-radius: 0; border: 0; }
+.tour-karte-foto { position: relative; }
+.flaggen { display: inline-flex; gap: 3px; }
+.flagge { display: block; border-radius: 2px; box-shadow: 0 0 0 1px rgba(28, 25, 23, 0.15); }
+.tour-karte-gebirge { display: inline-flex; align-items: center; gap: 8px; position: absolute; top: 14px; left: 14px; font: 500 11px/1 var(--mono); text-transform: uppercase; letter-spacing: 0.06em; color: var(--stone-900); background: rgba(255, 255, 255, 0.92); border-radius: 999px; padding: 7px 11px; }
 .tour-karte-text { padding: 28px 24px 20px; }
 .tour-karte .titel-datum { font-size: 13px; margin-bottom: 14px; }
 .tour-karte .titel-schrift { font-size: 36px; margin-bottom: 16px; }
@@ -500,7 +504,8 @@ code { font: 12px var(--mono); }
   .karte-etappe { height: 520px; border-radius: var(--radius); }
   .tour-karte-link { grid-template-columns: 1fr 1fr; align-items: center; }
   .tour-karte-text { padding: 40px 48px; }
-  .tour-karte-link > .bild { height: 100%; aspect-ratio: auto !important; }
+  .tour-karte-foto { align-self: stretch; }
+  .tour-karte-foto > .bild { height: 100%; aspect-ratio: auto !important; }
   .etappe-header h1 { font-size: 60px; }
 }
 

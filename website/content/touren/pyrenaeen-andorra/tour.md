@@ -1,6 +1,8 @@
 ---
 titel: "Von See zu See durch Andorra"
 untertitel: "Eine Woche von Bergsee zu Bergsee: über die Pässe nach Andorra, auf seinen höchsten Gipfel, durch ein Tal, das UNESCO-Welterbe ist, und zur Halbzeit ein Abend in der Therme Caldea – hin mit dem Zug, zurück im Nachtzug."
+gebirge: Pyrenäen
+laender: [fr, ad, es]
 region: Ariège (Frankreich) · Andorra · Cerdanya (Spanien)
 status: planung
 stand: "2026-11-01"

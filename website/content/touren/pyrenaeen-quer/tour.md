@@ -1,6 +1,8 @@
 ---
 titel: "Quer durch bis ans Meer"
 untertitel: "Die großen Namen der Pyrenäen in einer Woche: Lac de Gaube, Canyon von Ordesa, Brèche de Roland und Cirque de Gavarnie – dann mit Zahnradbahn und Train Jaune nach Osten und zu Fuß bis an den Strand von Banyuls."
+gebirge: Pyrenäen
+laender: [fr, es]
 region: West- und Ostpyrenäen · Frankreich und Spanien
 status: planung
 stand: "2026-11-01"

@@ -1,6 +1,8 @@
 ---
 titel: "Gipfelwoche um Gavarnie"
 untertitel: "Für alle, die oben stehen wollen: bis zu drei Dreitausender, darunter der Monte Perdido, zweimal zu Fuß über die Grenze und durch den Canyon von Ordesa – mit dem Minibus hin und zurück und einem Abend am Meer."
+gebirge: Pyrenäen
+laender: [fr, es]
 region: Pyrenäen · Frankreich und Spanien · Nationalparks Pyrénées und Ordesa y Monte Perdido
 status: planung
 stand: "2026-10-31"

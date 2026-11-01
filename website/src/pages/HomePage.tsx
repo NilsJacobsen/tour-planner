@@ -3,6 +3,7 @@ import { site } from "../content/load.ts";
 import { hm, km, zeitraumKurz } from "../format.ts";
 import { STATUS } from "../text.ts";
 import { Bild, GradeBadge } from "../components/basics.tsx";
+import { Flagge } from "../components/Flagge.tsx";
 
 export function HomePage() {
   return (
@@ -12,7 +13,17 @@ export function HomePage() {
         {site.touren.map((t) => (
           <li key={t.slug} className="tour-karte">
             <Link to={`/touren/${t.slug}`} className="tour-karte-link">
-              <Bild bild={t.data.bilder[0]} format="quer" />
+              <div className="tour-karte-foto">
+                <Bild bild={t.data.bilder[0]} format="quer" />
+                <span className="tour-karte-gebirge">
+                  <span className="flaggen">
+                    {t.data.laender.map((l) => (
+                      <Flagge key={l} land={l} />
+                    ))}
+                  </span>
+                  {t.data.gebirge}
+                </span>
+              </div>
               <div className="tour-karte-text">
                 <p className="titel-datum">
                   {t.data.termin ? zeitraumKurz(t.data.termin.von, t.data.termin.bis) : "Termin noch offen"}

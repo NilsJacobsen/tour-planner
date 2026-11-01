@@ -1,6 +1,8 @@
 ---
 titel: "Unter dem Pic du Midi d'Ossau"
 untertitel: "Für Seenliebhaber und Bahnfans: eine Nacht im Riesenbahnhof von Canfranc, mit der kleinen Bahn von Artouste über den Seen, Hüttenabende unter dem Ossau – und zum Schluss durch den Chemin de la Mâture, einen Weg mitten in der Felswand."
+gebirge: Pyrenäen
+laender: [es, fr]
 region: Westpyrenäen · Aragón (Spanien) und Béarn (Frankreich)
 status: planung
 stand: "2026-11-01"
