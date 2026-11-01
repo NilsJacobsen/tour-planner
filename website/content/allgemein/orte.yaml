@@ -444,3 +444,315 @@ orte:
     hinweis: Hier malten Matisse und Derain im Sommer 1905 – der Anfang des Fauvismus.
     quelle: https://www.tourisme-collioure.com/mon-collioure/racontez-moi-le-fauvisme/
     geprueft: "2026-11-01"
+  # --- pyrenaeen-ossau ---
+  - id: pau
+    name: Bahnhof Pau
+    typ: ort
+    lat: 43.29183
+    lon: -0.37002
+    hinweis: >-
+      Gegenüber vom Bahnhof fährt seit 1908 eine kleine Standseilbahn kostenlos hinauf zum Boulevard des Pyrénées,
+      mit Blick auf die Berge.
+    quelle: https://en.wikipedia.org/wiki/Funiculaire_de_Pau
+    geprueft: "2026-11-01"
+  - id: bedous
+    name: Bahnhof Bedous
+    typ: ort
+    lat: 42.99585
+    lon: -0.60357
+    hinweis: >-
+      Endbahnhof der Regionalzüge aus Pau. Die Strecke weiter nach Canfranc ist seit 1970 stillgelegt; seit 2016 fahren
+      die Züge wieder bis Bedous. Vor dem Bahnhof hält der Bus 550 nach Canfranc.
+    quelle: https://fr.wikipedia.org/wiki/Ligne_de_Pau_%C3%A0_Canfranc_(fronti%C3%A8re)
+    geprueft: "2026-11-01"
+  - id: canfranc-estacion
+    name: Hotel im Bahnhof Canfranc
+    bild:
+      src: /bilder/pyrenaeen-ossau/canfranc-bahnhof.jpg
+      motiv: Die lange Fassade des Bahnhofs Canfranc mit dem Mittelbau unter der Schieferkuppel und dem Bahnsteigdach, vor dem Umbau zum Hotel; dahinter Berge im Sommer
+      format: quer
+      ausschnitt: "40% 50%"
+      credit: Marc Celeiro (Wikimedia Commons)
+      lizenz: CC BY-SA 4.0
+      quelle: "https://commons.wikimedia.org/wiki/File:Vista_general_de_la_fa%C3%A7ana_de_l%27Estaci%C3%B3_Internacional_de_Canfranc_01.JPG"
+    typ: huette
+    lat: 42.75068
+    lon: -0.51317
+    web: https://www.barcelo.com/en-es/canfranc-estacion-a-royal-hideaway-hotel/
+    telefon: "+34 974 561 900"
+    hinweis: >-
+      Der internationale Bahnhof wurde 1928 eröffnet. Seit dem 27. Januar 2023 ist im
+      alten Gebäude ein Hotel mit 104 Zimmern (Barceló, „Royal Hideaway“); die Hotelseite nennt Zimmer ab 199 €. Günstiger
+      schläft man im Ort, etwa in der Herberge Río Aragón oder im Hotel Villa de Canfranc.
+    huette:
+      betreiber: Barceló (das Gebäude gehört der Regierung von Aragón)
+      versorgung: bewirtschaftet
+      buchung: Online oder per Telefon.
+    quelle: https://www.canfranc.es/turismo_canfranc_pirineos.php?idRec=5
+    geprueft: "2026-11-01"
+  - id: ibones-de-anayet
+    name: Ibones de Anayet
+    typ: see
+    lat: 42.77876
+    lon: -0.44393
+    hoehe: 2225
+    hinweis: Kleine Seen unter dem Pico de Anayet, mit Blick auf den Pic du Midi d'Ossau. Baden ist hier seit 2026 verboten.
+    quelle: https://www.aragon.es/actualidad/regulacion-acampada-ibones-del-anayet
+    geprueft: "2026-11-01"
+  - id: corral-de-las-mulas
+    name: Corral de las Mulas
+    typ: parkplatz
+    lat: 42.78578
+    lon: -0.39331
+    hinweis: Parkplatz an der Straße von Formigal zum Col du Portalet. Hier holt uns das Taxi nach Sallent ab.
+  - id: sallent-de-gallego
+    name: Sallent de Gállego
+    typ: ort
+    lat: 42.77121
+    lon: -0.33409
+    hinweis: >-
+      Bergdorf am Ende des Tena-Tals mit mehreren kleinen Hotels, zum Beispiel Hostal Centro (mit Restaurant) oder
+      Hotel Maximina. Welches im September offen hat und Halbpension bietet, klären wir noch.
+    quelle: https://travesiapirenaica.com/en/gr11/sallent_gallego-respomuso.php
+    geprueft: "2026-11-01"
+  - id: la-sarra
+    name: Stausee La Sarra
+    typ: parkplatz
+    lat: 42.79298
+    lon: -0.32751
+    hinweis: Parkplatz am Stausee oberhalb von Sallent, Ausgangspunkt nach Respomuso.
+  - id: refugio-respomuso
+    name: Refugio de Respomuso
+    bild:
+      src: /bilder/orte/refugio-respomuso.jpg
+      motiv: Das Refugio de Respomuso, ein Steinhaus mit roten Holzgiebeln, Solarzellen und Terrasse, zwischen Granitfelsen unter blauem Himmel
+      format: quer
+      ausschnitt: "50% 60%"
+      credit: Willtron (Wikimedia Commons)
+      lizenz: CC BY-SA 4.0
+      quelle: "https://commons.wikimedia.org/wiki/File:Cubilar_de_Respomuso.jpg"
+    typ: huette
+    lat: 42.81699
+    lon: -0.28761
+    hoehe: 2200
+    web: https://www.alberguesyrefugios.com/respomuso/
+    telefon: "+34 974 337 556"
+    hinweis: >-
+      Am Stausee von Respomuso, unter dem Balaïtous. Preise 2026 ohne Alpenvereinsausweis: Übernachtung 26,20 €,
+      Abendessen 22,50 €, Frühstück 11,20 € (mit Ausweis günstiger). Ob man mit Karte zahlen kann, wissen wir nicht.
+    huette:
+      betreiber: Federación Aragonesa de Montañismo
+      versorgung: bewirtschaftet
+      plaetze: { lager: 74 }
+      buchung: Online über die Seite der Hütte oder per E-Mail an refugio@respomuso.com.
+    quelle: https://www.alberguesyrefugios.com/respomuso/
+    geprueft: "2026-11-01"
+  - id: col-d-arremoulit
+    name: Col d'Arrémoulit
+    typ: pass
+    lat: 42.83966
+    lon: -0.32152
+    hoehe: 2446
+    hinweis: Grenzpass zwischen Spanien und Frankreich, auf der französischen Seite ein steiles Blockfeld.
+  - id: refuge-arremoulit
+    name: Refuge d'Arrémoulit
+    bild:
+      src: /bilder/orte/refuge-arremoulit.jpg
+      motiv: Einer der Seen von Arrémoulit unter dunklen Granitgipfeln, im Frühsommer noch mit Schneefeldern; die Hütte steht ganz in der Nähe
+      format: quer
+      ausschnitt: "50% 40%"
+      credit: Kaprixo (Wikimedia Commons)
+      lizenz: CC BY-SA 3.0
+      quelle: "https://commons.wikimedia.org/wiki/File:Arremoulit.JPG"
+    typ: huette
+    lat: 42.84605
+    lon: -0.32916
+    hoehe: 2265
+    web: https://refugedarremoulit.ffcam.fr/
+    telefon: "+33 9 70 02 97 93"
+    hinweis: >-
+      Im Juli 2026 nach dem Umbau wieder eröffnet. Preise 2026: Übernachtung 25 € (Gruppe 20 €), Abendessen 23 €,
+      Frühstück 10 €, Dusche 4 €. Wie man an der Hütte zahlt, wissen wir nicht.
+    huette:
+      betreiber: FFCAM (Club Alpin Français)
+      saison: "2026: 14. Juli bis 11. Oktober"
+      versorgung: bewirtschaftet
+      plaetze: { lager: 44 }
+      buchung: Online über die Seite der Hütte.
+    quelle: https://refugedarremoulit.ffcam.fr/tarifs.html
+    geprueft: "2026-11-01"
+  - id: lac-d-artouste
+    name: Gare du Lac (Petit train d'Artouste)
+    typ: bahn
+    lat: 42.86455
+    lon: -0.33565
+    hinweis: >-
+      Endstation des Petit train d'Artouste unter dem Staudamm des Lac d'Artouste. Die Fahrkarte für die Talfahrt gibt
+      es nur hier am Schalter, nicht online.
+    quelle: https://artouste.fr/ete/fr/train
+    geprueft: "2026-11-01"
+  - id: la-sagette
+    name: La Sagette (Bahnhof und Bergstation)
+    typ: bahn
+    lat: 42.89777
+    lon: -0.39566
+    hoehe: 1928
+    hinweis: Hier fährt der Petit train d'Artouste ab, ein paar Schritte von der Bergstation der Kabinenbahn aus Fabrèges.
+  - id: fabreges
+    name: Fabrèges (Talstation)
+    typ: bahn
+    lat: 42.87995
+    lon: -0.39654
+    hoehe: 1260
+    hinweis: Talstation der Kabinenbahn auf La Sagette, am Stausee von Fabrèges.
+  - id: gabas
+    name: Chambre d'hôtes L'Estibère (Gabas)
+    typ: huette
+    lat: 42.88770
+    lon: -0.42759
+    telefon: "+33 5 59 05 57 93"
+    hinweis: >-
+      Gästehaus im Weiler Gabas mit fünf Zimmern für bis zu 15 Personen, Abendessen nach Vorbestellung. Zahlung auch
+      mit Karte. Preise stehen nicht online. Ausweichquartier: das Chalet des CAF Pau im selben Ort.
+    huette:
+      versorgung: bewirtschaftet
+      buchung: Per Telefon oder per E-Mail an jean-marcrepeto@orange.fr.
+    quelle: https://www.tourisme64.com/hebergements/chambre-d-hotes/gabas/HLOAQU064V5764CO-lestibere/
+    geprueft: "2026-11-01"
+  - id: lac-de-bious-artigues
+    name: Lac de Bious-Artigues
+    typ: see
+    lat: 42.86865
+    lon: -0.44817
+    hoehe: 1417
+  - id: col-de-suzon
+    name: Col de Suzon
+    typ: pass
+    lat: 42.84700
+    lon: -0.42343
+    hoehe: 2127
+  - id: pic-du-midi-d-ossau
+    name: Pic du Midi d'Ossau
+    typ: gipfel
+    lat: 42.84300
+    lon: -0.43806
+    hoehe: 2884
+    hinweis: Der Doppelgipfel ist nur kletternd zu erreichen – wir gehen außen herum.
+  - id: refuge-pombie
+    name: Refuge de Pombie
+    bild:
+      src: /bilder/orte/refuge-pombie.jpg
+      motiv: Die Refuge de Pombie über einem kleinen See auf einer grünen Hochfläche, hinten die Berge des Ossau-Tals; rechts kommt eine Gruppe den Weg herauf
+      format: quer
+      ausschnitt: "50% 50%"
+      credit: Cptcv (Wikimedia Commons)
+      lizenz: CC BY-SA 2.5
+      quelle: "https://commons.wikimedia.org/wiki/File:Lac_de_Pombie.jpg"
+    typ: huette
+    lat: 42.83550
+    lon: -0.42695
+    hoehe: 2032
+    web: https://refugedepombie.ffcam.fr/
+    telefon: "+33 9 72 19 23 80"
+    hinweis: >-
+      Direkt unter der Südwand des Pic du Midi d'Ossau. Halbpension 2026: 52 €. Bezahlt wird nur bar oder per Scheck,
+      nicht mit Karte. Ist die Hütte voll, gibt es ein Zelt mit 16 Plätzen.
+    huette:
+      betreiber: FFCAM (Club Alpin Français)
+      saison: Bewartet von Juni bis Anfang Oktober
+      versorgung: bewirtschaftet
+      plaetze: { lager: 45 }
+      buchung: Nur online über die Seite der Hütte.
+    quelle: https://refugedepombie.ffcam.fr/infos-pratiques.html
+    geprueft: "2026-11-01"
+  - id: caillou-de-soques
+    name: Caillou de Soques
+    typ: parkplatz
+    lat: 42.83549
+    lon: -0.38410
+    hinweis: Parkplatz an der Straße von Gabas zum Col du Portalet, Ausgangspunkt für den kurzen Weg nach Pombie.
+    quelle: https://refugedepombie.ffcam.fr/infos-pratiques.html
+    geprueft: "2026-11-01"
+  - id: col-de-l-iou
+    name: Col de l'Iou
+    typ: pass
+    lat: 42.82944
+    lon: -0.44910
+    hoehe: 2194
+  - id: lac-de-peyreget
+    name: Lac de Peyreget
+    typ: see
+    lat: 42.83434
+    lon: -0.44828
+    hoehe: 2074
+  - id: refuge-ayous
+    name: Refuge d'Ayous
+    bild:
+      src: /bilder/orte/refuge-ayous.jpg
+      motiv: Die Refuge d'Ayous mit grauem Blechdach auf einer grünen Kuppe unter Felswänden, davor die Wiese am Lac Gentau
+      format: quer
+      ausschnitt: "50% 60%"
+      credit: Tournasol7 (Wikimedia Commons)
+      lizenz: CC BY 4.0
+      quelle: "https://commons.wikimedia.org/wiki/File:Refuge_d%27Ayous_(1).jpg"
+    typ: huette
+    lat: 42.84843
+    lon: -0.49119
+    hoehe: 1980
+    web: https://www.refuge-ayous.fr/
+    telefon: "+33 5 59 05 37 00"
+    hinweis: >-
+      Über dem Lac Gentau, in dem sich der Pic du Midi d'Ossau spiegelt. Halbpension 47,90 € (2026 und 2027).
+      An der Hütte geht keine Karte, nur bar oder per Scheck.
+    huette:
+      betreiber: SARL Ayous
+      saison: "2027: 12. Mai bis 26. September"
+      versorgung: bewirtschaftet
+      plaetze: { lager: 47 }
+      buchung: Online über die Seite der Hütte.
+    quelle: https://www.tourisme64.com/hebergements/hebergement-collectif/gabas/HCOAQU064011SGKU-refuge-dayous/
+    geprueft: "2026-11-01"
+  - id: lac-gentau
+    name: Lac Gentau
+    typ: see
+    lat: 42.84826
+    lon: -0.48765
+    hoehe: 1947
+  - id: pic-d-ayous
+    name: Pic d'Ayous
+    typ: gipfel
+    lat: 42.85435
+    lon: -0.49080
+    hoehe: 2288
+  - id: col-d-ayous
+    name: Col d'Ayous
+    typ: pass
+    lat: 42.85189
+    lon: -0.49713
+    hoehe: 2185
+  - id: chemin-de-la-mature
+    name: Chemin de la Mâture
+    typ: aussicht
+    lat: 42.88799
+    lon: -0.55800
+    hinweis: >-
+      1772 vom Ingenieur Paul-Marie Leroy in die Felswand geschlagen, um Tannenstämme aus dem Wald von Pacq als
+      Schiffsmasten für die französische Marine ins Tal zu bringen. Rund 1,2 km lang, hoch über dem Gave d'Aspe.
+    quelle: https://en.wikipedia.org/wiki/Chemin_de_la_M%C3%A2ture
+    geprueft: "2026-11-01"
+  - id: fort-du-portalet
+    name: Fort du Portalet
+    typ: aussicht
+    lat: 42.88643
+    lon: -0.56274
+    hinweis: Festung aus der Mitte des 19. Jahrhunderts über der Straße zum Somport; ab 1943 Gefängnis, unter anderem für Léon Blum und 1945 für Philippe Pétain.
+    quelle: https://pop.culture.gouv.fr/notice/merimee/PA00084557
+    geprueft: "2026-11-01"
+  - id: etsaut
+    name: Etsaut
+    typ: ort
+    lat: 42.91210
+    lon: -0.57130
+    hinweis: Dorf im Aspe-Tal mit der Haltestelle „Église/École“ des Busses 550 nach Bedous.
+    quelle: https://transports.nouvelle-aquitaine.fr/sites/default/files/timetable_files/NOUVEAU-SPECIAL%20Les%20Estivales-Fiche%20horaire%20Cars%20r%C3%A9gionaux--Bedous-.pdf
+    geprueft: "2026-11-01"
