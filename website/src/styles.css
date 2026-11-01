@@ -270,6 +270,8 @@ code { font: 12px var(--mono); }
 .abschnitt-chips { display: flex; gap: 8px; overflow-x: auto; padding-top: 12px; padding-bottom: 12px; scrollbar-width: none; }
 .abschnitt-chips a { flex: none; border: 1px solid var(--stone-200); border-radius: 999px; padding: 7px 12px; font: 400 12px/1 var(--mono); text-transform: uppercase; letter-spacing: 0.04em; text-decoration: none; background: #fff; }
 .sticky-chips { position: sticky; top: 0; z-index: 30; background: rgba(245, 245, 244, 0.96); border-bottom: 1px solid var(--line); max-width: none; }
+/* Full-width bar, but the chips start where the page content starts. */
+.sticky-chips { padding-left: max(var(--gutter), calc((100% - var(--maxw)) / 2 + var(--gutter))); padding-right: max(var(--gutter), calc((100% - var(--maxw)) / 2 + var(--gutter))); }
 
 /* --- Trip page: hero. Full-bleed photo fading into the page, script title, stats in mono. */
 .hero { padding-bottom: 56px; }
