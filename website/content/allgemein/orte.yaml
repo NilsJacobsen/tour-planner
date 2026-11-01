@@ -3,549 +3,6 @@
 # scripts/find.mjs); hut facts carry their source (quelle) and check date (geprueft).
 
 orte:
-  # --- Schönau am Königssee
-  - id: koenigssee
-    name: Schönau am Königssee
-    typ: ort
-    lat: 47.59030
-    lon: 12.98891
-  - id: jennerbahn-tal
-    name: Jennerbahn Talstation
-    typ: bahn
-    lat: 47.59115
-    lon: 12.99467
-    hoehe: 638
-    web: https://www.jennerbahn.de
-  - id: jennerbahn-mitte
-    name: Jennerbahn Mittelstation
-    typ: bahn
-    lat: 47.58645
-    lon: 13.01723
-    hoehe: 1194
-  - id: seelaende
-    name: Seelände (Schiffsanleger Königssee)
-    typ: schiff
-    lat: 47.58803
-    lon: 12.98884
-    web: https://www.seenschifffahrt.de
-  - id: parkplatz-koenigssee
-    name: Parkplatz Königssee
-    typ: parkplatz
-    lat: 47.59182
-    lon: 12.98953
-    hinweis: Großer, gebührenpflichtiger Parkplatz der Gemeinde Schönau am Königssee.
-    quelle: https://www.seenschifffahrt.de/en/koenigssee/visitor-information/getting-here
-    geprueft: "2026-10-26"
-
-  # --- Tag 1
-  - id: koenigsbachalm
-    name: Königsbachalm
-    typ: alm
-    lat: 47.56593
-    lon: 13.01281
-  - id: priesbergalm
-    name: Priesbergalm
-    typ: alm
-    lat: 47.55547
-    lon: 13.01245
-  - id: kessel
-    name: Kessel (Schiffshalt)
-    typ: schiff
-    lat: 47.56026
-    lon: 12.98750
-    hinweis: Bedarfshalt – dem Bootsführer Bescheid geben oder die orange Schiebetafel am Steg nutzen.
-    quelle: https://www.seenschifffahrt.de/fileadmin/user_upload/Fahrplaene/KS/KS_Fahrplan_Sommer.pdf
-    geprueft: "2026-10-26"
-  - id: gotzentalalm
-    name: Gotzentalalm
-    typ: alm
-    lat: 47.55508
-    lon: 13.00055
-  - id: gotzenalm
-    name: Gotzenalm
-    bild:
-      src: /bilder/orte/gotzenalm.jpg
-      motiv: Die Gotzenalm im Herbstsonnenschein, dahinter die Watzmann-Ostwand
-      format: quer
-      ausschnitt: right center
-      credit: Horemu (Wikimedia Commons)
-      lizenz: CC BY-SA 3.0
-      quelle: "https://commons.wikimedia.org/wiki/File:Gotzenalm_with_Watzmann.jpg"
-    typ: huette
-    lat: 47.53730
-    lon: 12.99637
-    hoehe: 1685
-    web: https://www.berchtesgaden.de/huetten/gotzenalm
-    huette:
-      saison: Mai bis Oktober
-      versorgung: bewirtschaftet
-      plaetze: { zimmer: 54, lager: 45 }
-      buchung: >-
-        In der Hochsaison, an Wochenenden und Feiertagen unbedingt reservieren.
-        In der Saison nur telefonisch – E-Mails werden dann nicht bearbeitet.
-    quelle: https://www.bergwelten.com/h/gotzenalm
-    geprueft: "2026-10-26"
-  - id: feuerpalfen
-    name: Feuerpalfen
-    typ: aussicht
-    lat: 47.54084
-    lon: 12.99246
-    hoehe: 1728
-
-  # --- Tag 2
-  - id: landtalalm
-    name: Landtalalm (verfallen)
-    typ: alm
-    lat: 47.51877
-    lon: 13.01792
-  - id: wasseralm
-    name: Wasseralm in der Röth
-    bild:
-      src: /bilder/orte/wasseralm.jpg
-      motiv: Die Wasseralm in der Röth mit Hüttenschild, dahinter Bergwald und Felsgipfel
-      format: quer
-      credit: Heinrich Stürzl (Wikimedia Commons)
-      lizenz: CC BY-SA 4.0
-      quelle: "https://commons.wikimedia.org/wiki/File:Wasseralm_in_der_R%C3%B6th_2018-09_(4).jpg"
-    typ: huette
-    lat: 47.49482
-    lon: 13.00658
-    hoehe: 1423
-    web: https://nationalpark-berchtesgaden.bayern.de/erlebnis/regeln_hinweise/berghuetten/wasseralm.htm
-    hinweis: Höhe auf berchtesgaden.de teils mit 1.416 m angegeben.
-    huette:
-      saison: In den Sommermonaten mit Hüttendienst, Winterraum ganzjährig offen
-      versorgung: selbstversorger
-      plaetze: { lager: 40 }
-      buchung: >-
-        Klein – rechtzeitig anmelden, vor allem an Wochenenden und im August.
-        Mehrere Nächte hintereinander sind nicht erlaubt.
-    quelle: https://www.berchtesgaden.de/wasseralm
-    geprueft: "2026-10-26"
-
-  # --- Tag 3
-  - id: halskoepfl
-    name: Halsköpfl
-    typ: aussicht
-    lat: 47.51066
-    lon: 12.97441
-    hoehe: 1718
-    hinweis: Blick auf den Königssee und einer der wenigen Punkte mit Handyempfang.
-    quelle: https://www.gaiagps.com/public/8D1yR2weXJ3YzNE3ge1DOkfL
-    geprueft: "2026-10-26"
-  - id: gruensee
-    name: Grünsee
-    typ: see
-    lat: 47.50184
-    lon: 12.95340
-  - id: himmelsleiter
-    name: Himmelsleiter
-    typ: ort
-    lat: 47.50269
-    lon: 12.94259
-  - id: niederbrunnsulzenscharte
-    name: Niederbrunnsulzenscharte
-    typ: pass
-    lat: 47.47189
-    lon: 12.97300
-    hoehe: 2368
-  - id: kaerlingerhaus
-    name: Kärlingerhaus am Funtensee
-    bild:
-      src: /bilder/orte/kaerlingerhaus.jpg
-      motiv: Das Kärlingerhaus am Funtensee, im Hintergrund das Schottmalhorn
-      format: quer
-      credit: Heinrich Stürzl (Wikimedia Commons)
-      lizenz: CC BY-SA 4.0
-      quelle: "https://commons.wikimedia.org/wiki/File:K%C3%A4rlingerhaus_von_NW_2018-09_(2).jpg"
-    typ: huette
-    lat: 47.49551
-    lon: 12.93742
-    hoehe: 1630
-    web: https://www.berchtesgaden.de/huetten/kaerlingerhaus-funtensee
-    huette:
-      betreiber: DAV Sektion Berchtesgaden
-      saison: Mai bis Oktober
-      versorgung: bewirtschaftet
-      plaetze: { zimmer: 40, lager: 120 }
-      buchung: In der Hochsaison oft früh ausgebucht – früh reservieren.
-    quelle: https://www.bergwelten.com/h/kaerlingerhaus
-    geprueft: "2026-10-26"
-  - id: funtensee
-    name: Funtensee
-    typ: see
-    lat: 47.49331
-    lon: 12.93998
-    hoehe: 1601
-    hinweis: Liegt in einem Kaltluftbecken – warme Kleidung für den Abend einpacken.
-    quelle: https://www.berchtesgaden.de/touren/berchtesgadener-gipfelweg-etappe-2a
-    geprueft: "2026-10-26"
-  - id: feldkogel
-    name: Feldkogel
-    typ: gipfel
-    lat: 47.49526
-    lon: 12.95781
-    hoehe: 1886
-    quelle: https://www.bergwelten.com/huetten/kaerlingerhaus
-    geprueft: "2026-10-26"
-
-  # --- Tag 4
-  - id: saugasse
-    name: Saugasse
-    typ: ort
-    lat: 47.51739
-    lon: 12.93309
-  - id: schrainbachalm
-    name: Schrainbachalm
-    typ: alm
-    lat: 47.52811
-    lon: 12.95229
-  - id: st-bartholomae
-    name: St. Bartholomä
-    typ: schiff
-    lat: 47.54442
-    lon: 12.97202
-    hinweis: Kirche und Schiffsanleger am Westufer des Königssees.
-
-  # ===== E5 Oberstdorf – Meran (geprüft 2026-10-27)
-
-  # --- Tag 1
-  - id: oberstdorf
-    name: Oberstdorf
-    typ: ort
-    lat: 47.41127
-    lon: 10.27825
-    hinweis: Bahnhof und Busbahnhof liegen direkt nebeneinander, nah am Zentrum.
-    quelle: https://www.oberstdorf.de/information/unterwegs/anreise/
-    geprueft: "2026-10-27"
-  - id: spielmannsau
-    name: Spielmannsau
-    typ: ort
-    lat: 47.34717
-    lon: 10.30497
-    hinweis: Berggasthof am Ende des Trettachtals.
-    quelle: https://www.spielmannsau.de/
-    geprueft: "2026-10-27"
-  - id: sperrbachtobel
-    name: Sperrbachtobel
-    typ: ort
-    lat: 47.31815
-    lon: 10.32285
-  - id: kemptner-huette
-    name: Kemptner Hütte
-    bild:
-      src: /bilder/orte/kemptner-huette.jpg
-      motiv: Die Kemptner Hütte in grünen Bergwiesen unter blauem Sommerhimmel
-      format: quer
-      credit: Kauk0r (Wikimedia Commons)
-      lizenz: CC BY-SA 3.0
-      quelle: "https://commons.wikimedia.org/wiki/File:Kemptner_Huette06.JPG"
-    typ: huette
-    lat: 47.31340
-    lon: 10.32782
-    hoehe: 1846
-    web: https://www.kemptner-huette.de/
-    huette:
-      betreiber: DAV Sektion Allgäu-Kempten
-      saison: "2026: 4. Juni bis 4. Oktober"
-      versorgung: bewirtschaftet
-      buchung: >-
-        Nur online über Hütten-Holiday, nicht am Anreisetag. Kostenlos stornieren bis zwei Tage
-        vorher. Auf der Hütte nur Barzahlung.
-    quelle: https://www.kemptner-huette.de/zimmer-lager
-    geprueft: "2026-10-27"
-
-  # --- Tag 2
-  - id: maedelejoch
-    name: Mädelejoch
-    typ: pass
-    lat: 47.30713
-    lon: 10.33328
-    hoehe: 1974
-    hinweis: Grenze zwischen Deutschland und Österreich.
-    quelle: https://www.oberstdorf.de/alpininfo/huetten/alpenueberquerung/tag-2-lechtalern.html
-    geprueft: "2026-10-27"
-  - id: rossgumpenalm
-    name: Roßgumpenalm
-    typ: alm
-    lat: 47.28968
-    lon: 10.33478
-    hoehe: 1329
-    hinweis: Ende Mai bis Mitte Oktober täglich geöffnet, Donnerstag Ruhetag.
-    quelle: https://www.lechtal-info.com/en/mountain-huts/rossgumpenalm.html
-    geprueft: "2026-10-27"
-  - id: simms-wasserfall
-    name: Simms-Wasserfall
-    typ: aussicht
-    lat: 47.27124
-    lon: 10.33883
-    hinweis: Rund 30 Meter hoch, Ende des 19. Jahrhunderts von dem Engländer Frederic Simms künstlich angelegt.
-    quelle: https://www.lechtal-info.com/en/tours/simms-wasserfall-schigge.html
-    geprueft: "2026-10-27"
-  - id: cafe-uta
-    name: Café Uta
-    typ: alm
-    lat: 47.27341
-    lon: 10.33953
-    hoehe: 1280
-    hinweis: "Saison 2026: 14. Mai bis 11. Oktober, 10 bis 18 Uhr, mittwochs Ruhetag."
-    quelle: http://www.cafe-uta.at
-    geprueft: "2026-10-27"
-  - id: haengebruecke-holzgau
-    name: Hängebrücke Holzgau
-    typ: aussicht
-    lat: 47.26499
-    lon: 10.33978
-    hinweis: Rund 200 Meter lang und mehr als 100 Meter über der Höhenbachschlucht.
-    quelle: https://www.tirol.at/aktivitaeten/sport/wandern/wandertouren/holzgau-haengebrueckenrunde
-    geprueft: "2026-10-27"
-  - id: holzgau
-    name: Holzgau
-    typ: ort
-    lat: 47.26024
-    lon: 10.34393
-    hinweis: Das Linientaxi ins Madautal fährt am Gasthof Bären ab.
-    quelle: https://www.feuerstein-bus.at/uploads/21VMvJMM/MadautalTaxi2026.pdf
-    geprueft: "2026-10-27"
-  - id: parkplatz-memminger
-    name: Parkplatz Memminger Hütte
-    typ: parkplatz
-    lat: 47.20982
-    lon: 10.46338
-    hinweis: >-
-      Endhaltestelle des Linientaxis, hinter Madau an der Talstation der Materialseilbahn. In Madau
-      selbst gibt es 2026 weder Gasthaus noch Übernachtung.
-    quelle: https://www.bergwelten.com/t/w/45220
-    geprueft: "2026-10-27"
-  - id: memminger-huette
-    name: Memminger Hütte
-    bild:
-      src: /bilder/orte/memminger-huette.jpg
-      motiv: Die Memminger Hütte auf ihrem Wiesenrücken vor den Felsgipfeln der Lechtaler Alpen
-      format: quer
-      credit: Vince51 (Wikimedia Commons)
-      lizenz: CC BY-SA 3.0
-      quelle: "https://commons.wikimedia.org/wiki/File:Memminger_H%C3%BCtte.JPG"
-    typ: huette
-    lat: 47.20061
-    lon: 10.47860
-    hoehe: 2242
-    web: https://www.memmingerhuette.at/
-    huette:
-      betreiber: DAV Sektion Memmingen
-      saison: "2027: 1. Juni bis 3. Oktober"
-      versorgung: bewirtschaftet
-      plaetze: { zimmer: 15, lager: 116 }
-      buchung: Online über Hütten-Holiday.
-    quelle: https://www.huetten-holiday.com/huts/memminger-huette
-    geprueft: "2026-10-27"
-
-  # --- Tag 3
-  - id: seescharte
-    name: Seescharte
-    typ: pass
-    lat: 47.19296
-    lon: 10.49396
-    hoehe: 2599
-  - id: mittlerer-seewisee
-    name: Mittlerer Seewisee
-    typ: see
-    lat: 47.19493
-    lon: 10.49041
-    hoehe: 2425
-  - id: oberlochalm
-    name: Oberlochalm
-    typ: alm
-    lat: 47.18851
-    lon: 10.51639
-    hoehe: 1819
-    quelle: https://tirolwest.at/en/cottages/rid/1814860
-    geprueft: "2026-10-27"
-  - id: unterlochalm
-    name: Unterlochalm
-    typ: alm
-    lat: 47.18623
-    lon: 10.54759
-    hoehe: 1567
-    quelle: https://tirolwest.at/en/cottages/rid/1814860
-    geprueft: "2026-10-27"
-  - id: burschlboden
-    name: Burschlboden
-    typ: aussicht
-    lat: 47.16519
-    lon: 10.58184
-    hinweis: Aussicht über Zams, Landeck und den Krahberg. Von hier in steilen Kehren zum Parkplatz des E5-Shuttles.
-    quelle: https://tirolwest.at/en/cottages/rid/1814860
-    geprueft: "2026-10-27"
-  - id: parkplatz-schotterwerk
-    name: Parkplatz Schotterwerk Zams
-    typ: parkplatz
-    lat: 47.17040
-    lon: 10.59258
-    hinweis: >-
-      Seit Sommer 2025 endet der E5-Abstieg hier, weil der alte Weg wegen Bauarbeiten an der Autobahn
-      gesperrt ist. Von hier fährt das E5-Shuttle ins Zentrum.
-    quelle: https://e5.tirolwest.at/de/
-    geprueft: "2026-10-27"
-  - id: zams
-    name: Zams
-    bild:
-      src: /bilder/orte/zams.jpg
-      motiv: Blick über Zams im Inntal, dahinter Landeck und die Berge
-      format: quer
-      credit: Braveheart (Wikimedia Commons)
-      lizenz: CC BY-SA 4.0
-      quelle: "https://commons.wikimedia.org/wiki/File:Ortsansicht_Zams.JPG"
-    typ: ort
-    lat: 47.15863
-    lon: 10.58919
-    web: https://tirolwest.at
-    hinweis: Mehrere Gasthöfe, Hotels und Pensionen im Ort.
-    quelle: https://tirolwest.at/files/tirolwest/img/pdfs/Infoblaetter/2026/Unterk%C3%BCnfte%20Zams%202026.pdf
-    geprueft: "2026-10-27"
-
-  # --- Tag 4
-  - id: imst
-    name: Imst (Terminal Post)
-    typ: ort
-    lat: 47.23539
-    lon: 10.74027
-  - id: mittelberg
-    name: Mittelberg im Pitztal
-    typ: ort
-    lat: 46.95868
-    lon: 10.87136
-    hinweis: Bushaltestelle „Mittelberg Gletscherbahn“ am Ende des Pitztals.
-  - id: gletscherstube
-    name: Gletscherstube
-    typ: alm
-    lat: 46.94719
-    lon: 10.89046
-    hinweis: Gasthaus mit ganztags warmer Küche, eine halbe Stunde oberhalb von Mittelberg.
-    quelle: https://www.gletscherstube.at
-    geprueft: "2026-10-27"
-  - id: braunschweiger-huette
-    name: Braunschweiger Hütte
-    bild:
-      src: /bilder/orte/braunschweiger-huette.jpg
-      motiv: Die Braunschweiger Hütte über einem Blockfeld, links der Blick über die Ötztaler Alpen
-      format: quer
-      ausschnitt: center top
-      credit: Margebsa (Wikimedia Commons)
-      lizenz: CC BY 4.0
-      quelle: "https://commons.wikimedia.org/wiki/File:Braunschweiger_H%C3%BCtte_2025-08.jpg"
-    typ: huette
-    lat: 46.93525
-    lon: 10.90915
-    hoehe: 2759
-    web: https://www.braunschweiger-huette.at/
-    huette:
-      betreiber: DAV Sektion Braunschweig
-      saison: "2026: 8. Juni bis 23. September"
-      versorgung: bewirtschaftet
-      buchung: Online über alpsonline, außerdem per Anfrageformular oder Telefon.
-    quelle: https://www.braunschweiger-huette.at/
-    geprueft: "2026-10-27"
-
-  # --- Tag 5
-  - id: pitztaler-joechl
-    name: Pitztaler Jöchl
-    typ: pass
-    lat: 46.94077
-    lon: 10.91969
-    hoehe: 2996
-  - id: rettenbachferner
-    name: Rettenbachgletscher (Bushaltestelle)
-    typ: ort
-    lat: 46.94245
-    lon: 10.93259
-  - id: soelden
-    name: Sölden (Postamt)
-    typ: ort
-    lat: 46.96837
-    lon: 11.00819
-  - id: vent
-    name: Vent
-    typ: ort
-    lat: 46.85794
-    lon: 10.91327
-    hinweis: Bushaltestelle „Vent Hotel Similaun“, Endstation der Linie 330.
-  - id: martin-busch-huette
-    name: Martin-Busch-Hütte
-    bild:
-      src: /bilder/orte/martin-busch-huette.jpg
-      motiv: Die Martin-Busch-Hütte am Hang über dem Niedertal
-      format: quer
-      credit: Whgler (Wikimedia Commons)
-      lizenz: CC BY-SA 4.0
-      quelle: "https://commons.wikimedia.org/wiki/File:Martin-Busch-H%C3%BCtte_Niedertal.jpg"
-    typ: huette
-    lat: 46.80105
-    lon: 10.88694
-    hoehe: 2501
-    web: https://www.hotel-vent.at/index.php/martin-busch-huette
-    huette:
-      betreiber: DAV Sektion Berlin
-      saison: "2027: 8. Juni bis 26. September"
-      versorgung: bewirtschaftet
-      plaetze: { zimmer: 25, lager: 70 }
-      buchung: Online über alpsonline. Essen à la carte bis 17 Uhr, ab 18 Uhr Menü.
-    quelle: https://www.hotel-vent.at/index.php/martin-busch-huette
-    geprueft: "2026-10-27"
-
-  # --- Tag 6
-  - id: similaunhuette
-    name: Similaunhütte
-    typ: huette
-    lat: 46.77244
-    lon: 10.85463
-    hoehe: 3019
-    web: https://www.similaunhuette.com/
-    huette:
-      betreiber: privat
-      saison: "2027: 11. Juni bis etwa 23. September"
-      versorgung: bewirtschaftet
-      buchung: >-
-        Ab Anfang Juni nur telefonisch, vorher per E-Mail. Verbindlich erst mit Anzahlung.
-    quelle: https://www.similaunhuette.com/preise-informationen/
-    geprueft: "2026-10-27"
-  - id: oetzi-fundstelle
-    name: Ötzi-Fundstelle am Tisenjoch
-    typ: aussicht
-    lat: 46.77891
-    lon: 10.83982
-    hoehe: 3210
-    hinweis: Eine Steinpyramide erinnert an den Fund des Ötzi.
-    quelle: https://www.similaunhuette.com/wandererlebnissommer/
-    geprueft: "2026-10-27"
-  - id: tisenhof
-    name: Tisenhof
-    typ: alm
-    lat: 46.74020
-    lon: 10.84614
-    hoehe: 1814
-    hinweis: Jausenstation mit warmen Gerichten.
-    quelle: https://www.vinschgau.net/en/schnalstal-valley/your-summer-in-schnalstal-valley/alpine-pastures-mountain-huts/rid-78A1C2F24F8CD9C1CDF9D35EFD1AFC5A-g-maso-tisen.html
-    geprueft: "2026-10-27"
-  - id: vernagt
-    name: Vernagt am See
-    typ: ort
-    lat: 46.73593
-    lon: 10.84883
-  - id: meran
-    name: Meran
-    bild:
-      src: /bilder/orte/meran.jpg
-      motiv: Das Kurhaus an der Passerpromenade in Meran, dahinter die Berge
-      format: quer
-      credit: Ymblanter (Wikimedia Commons)
-      lizenz: CC BY-SA 4.0
-      quelle: "https://commons.wikimedia.org/wiki/File:Merano_View_of_the_Kurhaus_2.jpg"
-    typ: ort
-    lat: 46.67267
-    lon: 11.15040
-    hinweis: Der Bus 261 hält am Bahnhof.
-
   # --- Pyrenäen: Gavarnie, Vignemale, Ordesa, Monte Perdido
   - id: gavarnie
     name: Gavarnie
@@ -768,9 +225,222 @@ orte:
       buchung: Online über das Reservierungssystem der FFCAM; orange markierte Tage telefonisch bei der Hütte.
     quelle: https://refugebrechederoland.ffcam.fr
     geprueft: "2026-10-31"
-  - id: taillon
-    name: Taillon
+
+  # --- Pyrenäen mit dem Zug: Eyne, Núria, Ulldeter, Mantet, Canigó, Collioure
+  - id: muenchen-hbf
+    name: München Hauptbahnhof
+    typ: ort
+    lat: 48.14010
+    lon: 11.55850
+  - id: bolquere-eyne
+    name: Bahnhof Bolquère-Eyne
+    typ: ort
+    lat: 42.49788
+    lon: 2.08752
+    hoehe: 1593
+    hinweis: >-
+      Haltestelle des Train Jaune. Sie gehört nicht zu den acht festen Halten, die übrigen sind Bedarfshalte –
+      wir sagen dem Zugpersonal vorher Bescheid.
+    quelle: https://letrainjaune.fr/horaires-et-infos/
+    geprueft: "2026-11-01"
+  - id: eyne
+    name: Gîte Cal Paï (Eyne)
+    typ: huette
+    lat: 42.47366
+    lon: 2.08279
+    hoehe: 1600
+    web: https://gite-calpai.com/
+    telefon: "+33 6 08 82 00 99"
+    hinweis: >-
+      Kleines Gästehaus im Dorf Eyne, sieben Zimmer mit eigenem Bad. Halbpension 75 € pro Person, Abendessen um 19:30.
+    huette:
+      betreiber: Familie Vidou (privat)
+      versorgung: bewirtschaftet
+      buchung: Telefonisch oder über das Kontaktformular der Website.
+    quelle: https://gite-calpai.com/hebergement/
+    geprueft: "2026-11-01"
+  - id: coll-de-nuria
+    name: Coll de Núria
+    typ: pass
+    lat: 42.42095
+    lon: 2.15006
+    hoehe: 2680
+    hinweis: Grenze zwischen Frankreich und Spanien. Auf der französischen Seite heißt er Col d'Eyne.
+  - id: nuria
+    name: Hotel Vall de Núria
+    bild:
+      src: /bilder/orte/nuria.jpg
+      motiv: Das Heiligtum von Núria mit Kirche und Hotelbau am Rand des Sees, dahinter das Tal
+      format: quer
+      ausschnitt: "25% 70%"
+      credit: Pere López Brosa (Wikimedia Commons)
+      lizenz: CC BY-SA 4.0
+      quelle: "https://commons.wikimedia.org/wiki/File:N%C3%BAria_-_P1040247.jpg"
+    typ: huette
+    lat: 42.39693
+    lon: 2.15301
+    hoehe: 1964
+    web: https://hotelvalldenuria.cat/
+    telefon: "+34 972 73 20 00"
+    hinweis: >-
+      Das Hotel steht direkt am Heiligtum von Núria. Ins Tal führt keine Straße: Seit 1931 fährt die Zahnradbahn
+      hinauf, davor kam man nur zu Fuß.
+    huette:
+      saison: "Ganzjährig außer einer Pause im Spätherbst (zuletzt 1. November bis 4. Dezember)"
+      versorgung: bewirtschaftet
+      buchung: Online, per Telefon oder per E-Mail an reserveshotel@valldenuria.cat.
+    quelle: https://hotelvalldenuria.cat/
+    geprueft: "2026-11-01"
+  - id: puigmal
+    name: Puigmal
     typ: gipfel
-    lat: 42.69364
-    lon: -0.05129
-    hoehe: 3144
+    lat: 42.38327
+    lon: 2.11679
+    hoehe: 2910
+    quelle: https://datos-geodesia.ign.es/Red_Geodesica/Hoja0217/021793.pdf
+    geprueft: "2026-11-01"
+  - id: coll-de-noucreus
+    name: Coll de Noucreus
+    typ: pass
+    lat: 42.41745
+    lon: 2.18971
+    hoehe: 2795
+  - id: coll-de-la-marrana
+    name: Coll de la Marrana
+    typ: pass
+    lat: 42.41716
+    lon: 2.24258
+    hoehe: 2531
+  - id: refugi-ulldeter
+    name: Refugi d'Ulldeter
+    bild:
+      src: /bilder/pyrenaeen-zug/ulldeter-pla-de-morens.jpg
+      motiv: Der junge Ter fließt durch die Hochebene Pla de Morens beim Refugi d'Ulldeter, in der Mitte die Mauerreste des alten Schutzhauses von 1909
+      format: quer
+      credit: Jordiipa (Wikimedia Commons)
+      lizenz: CC BY-SA 4.0
+      quelle: "https://commons.wikimedia.org/wiki/File:Refugi_vell_d%27Ulldeter_i_quadres.jpg"
+    typ: huette
+    lat: 42.41972
+    lon: 2.25770
+    hoehe: 2220
+    web: https://ulldeter.es/
+    telefon: "+34 619 514 159"
+    hinweis: Laut Preisliste der Hütte (ulldeter.es) Halbpension 59 €, für Mitglieder von Partnervereinen 55 €. Im Sommer bucht man per E-Mail an reserves.ulldeter@gmail.com.
+    huette:
+      betreiber: Centre Excursionista de Catalunya
+      saison: "2026: 29. Mai bis 27. September"
+      versorgung: bewirtschaftet
+    quelle: http://web.archive.org/web/20260518182852/https://cec.cat/wp-content/uploads/Butlleti_MAIG26_web.pdf
+    geprueft: "2026-11-01"
+  - id: portella-de-mantet
+    name: Portella de Mantet
+    typ: pass
+    lat: 42.43288
+    lon: 2.27363
+    hoehe: 2413
+    hinweis: Grenze zwischen Spanien und Frankreich.
+  - id: mantet
+    name: Gîte La Cavale (Mantet)
+    bild:
+      src: /bilder/orte/mantet.jpg
+      motiv: Die Steinhäuser von Mantet am Hang, vorn ein Wanderpfad durch die Sommerwiese
+      format: quer
+      ausschnitt: "40% 55%"
+      credit: ArnoLagrange (Wikimedia Commons)
+      lizenz: CC BY-SA 4.0
+      quelle: "https://commons.wikimedia.org/wiki/File:Mantet.jpg"
+    typ: huette
+    lat: 42.47720
+    lon: 2.30927
+    hoehe: 1600
+    web: https://la-cavale.fr/
+    telefon: "+33 4 68 05 57 59"
+    hinweis: >-
+      Drei Lager für vier bis fünf Personen und drei Gästezimmer, Halbpension 51 €. Bezahlt wird bar, per Scheck oder
+      Überweisung, nicht mit Karte. Im Dorf gibt es noch die Gîtes La Girada und Cazenove.
+    huette:
+      betreiber: Accueil Paysan (privat)
+      saison: Das ganze Jahr
+      versorgung: bewirtschaftet
+      buchung: Telefonisch oder per E-Mail an contact@la-cavale.fr.
+    quelle: https://www.tourisme-pyreneesorientales.com/sorganiser/trouver-un-hebergement/villages-de-vacances-et-maisons-familiales/gite-detape-la-cavale-mantet-fr-6301995/
+    geprueft: "2026-11-01"
+  - id: py
+    name: Py
+    typ: ort
+    lat: 42.49576
+    lon: 2.35067
+    hinweis: "Kleines Dorf am GR 10 mit der Auberge de Py (+33 4 68 04 12 26)."
+    quelle: https://cdt66.media.tourinsoft.eu/upload/79---GR-10-en-Conflent-Canigo.pdf
+    geprueft: "2026-11-01"
+  - id: refuge-mariailles
+    name: Refuge de Mariailles
+    bild:
+      src: /bilder/orte/refuge-mariailles.jpg
+      motiv: Die Refuge de Mariailles zwischen Kiefern und Tannen, davor der Weg; hinten die Berge des Conflent
+      format: quer
+      ausschnitt: "75% 60%"
+      credit: El Caro (Wikimedia Commons)
+      lizenz: CC BY-SA 3.0
+      quelle: "https://commons.wikimedia.org/wiki/File:Refuge_de_Mariailles_de_loin.JPG"
+    typ: huette
+    lat: 42.50171
+    lon: 2.40782
+    hoehe: 1700
+    web: https://refugedemariailles.fr/
+    telefon: "+33 4 68 05 57 99"
+    hinweis: >-
+      Halbpension 51 €, für Gruppen ab zehn Personen 47 €. Decken gibt es, ein Hüttenschlafsack ist Pflicht (Leihe 3 €).
+      Bezahlt wird bar oder per Scheck, nicht mit Karte.
+    huette:
+      betreiber: Gemeinde Casteil, bewirtschaftet von Magali und Laurent
+      saison: "2026: 23. Mai bis Anfang Oktober"
+      versorgung: bewirtschaftet
+      plaetze: { lager: 53 }
+      buchung: Nur online, mit 15 € Anzahlung pro Person und Nacht.
+    quelle: https://refugedemariailles.fr/reservations-tarifs
+    geprueft: "2026-11-01"
+  - id: portella-de-vallmanya
+    name: Portella de Vallmanya
+    typ: pass
+    lat: 42.51397
+    lon: 2.46157
+    hoehe: 2591
+    quelle: https://cdt66.media.tourinsoft.eu/upload/MARIAILLES---Pic-du-Canigo---Web.pdf
+    geprueft: "2026-11-01"
+  - id: canigo
+    name: Canigó
+    typ: gipfel
+    lat: 42.51890
+    lon: 2.45656
+    hoehe: 2784
+    hinweis: Der heilige Berg der Katalanen, seit 2012 Grand Site de France.
+    quelle: https://www.tourisme-pyreneesorientales.com/article/canigo-grand-site
+    geprueft: "2026-11-01"
+  - id: saint-martin-du-canigou
+    name: Abtei Saint-Martin-du-Canigou
+    typ: aussicht
+    lat: 42.52832
+    lon: 2.40151
+  - id: casteil
+    name: Casteil
+    typ: ort
+    lat: 42.53210
+    lon: 2.39385
+    hinweis: Bushaltestelle am Parkplatz (liO-Linie 520 nach Perpignan).
+    quelle: https://storage.googleapis.com/is-wp-90-prod/uploads-prod/2026/09/OC-0926-FHliO-66-520-web.pdf
+    geprueft: "2026-11-01"
+  - id: perpignan
+    name: Perpignan
+    typ: ort
+    lat: 42.69624
+    lon: 2.87969
+  - id: collioure
+    name: Collioure
+    typ: ort
+    lat: 42.52696
+    lon: 3.07821
+    hinweis: Hier malten Matisse und Derain im Sommer 1905 – der Anfang des Fauvismus.
+    quelle: https://www.tourisme-collioure.com/mon-collioure/racontez-moi-le-fauvisme/
+    geprueft: "2026-11-01"

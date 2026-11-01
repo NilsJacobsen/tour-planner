@@ -3,7 +3,7 @@
 // content/touren/<tour>/karte.geojson (outer rings only, simplified).
 //
 // Usage: node scripts/osm-wasser.mjs <tour> <süd,west,nord,ost> "<Name>" ["<Name>" ...]
-// Example: node scripts/osm-wasser.mjs rund-um-den-koenigssee 47.47,12.92,47.60,13.03 Königssee Obersee Funtensee Grünsee
+// Example: node scripts/osm-wasser.mjs pyrenaeen 42.63,-0.17,42.80,0.05 "Barage d'Ossoue"
 
 import { writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";

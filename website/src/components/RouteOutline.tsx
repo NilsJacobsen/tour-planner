@@ -205,6 +205,18 @@ export function RouteOutline({ karte, aktiv = null, mini = false, stil = "farbig
         {karte.fahrten.map((f, i) => (
           <line key={i} x1={px(f.von[0])} y1={py(f.von[1])} x2={px(f.nach[0])} y2={py(f.nach[1])} className="umriss-fahrt" />
         ))}
+        {!mini &&
+          karte.fahrten
+            .filter((f) => f.fern)
+            .map((f, i) => {
+              const x = px(f.nach[0]), y = py(f.nach[1]);
+              const rechts = f.nach[0] >= f.von[0];
+              return (
+                <text key={`fern${i}`} x={x + (rechts ? 6 : -6)} y={y + 4} textAnchor={rechts ? "start" : "end"} className="umriss-label umriss-fern">
+                  {rechts ? `${f.ziel} →` : `← ${f.ziel}`}
+                </text>
+              );
+            })}
 
         {!mini &&
           linien.map((e) => (

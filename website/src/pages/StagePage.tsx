@@ -117,7 +117,7 @@ function StageView({ tour, e }: { tour: TourView; e: EtappeView }) {
               </dd>
             </div>
             <div>
-              <dt>{letzter ? `In ${v.fahrten.at(-1)?.von.name ?? nach.name}` : "Ankunft"}</dt>
+              <dt>{letzter ? `In ${(v.fahrten.find((f) => f.wann === "nachher")?.von ?? nach).name.replace(/ \(.*\)$/, "")}` : "Ankunft"}</dt>
               <dd>ca. {uhr(v.ankunft)}</dd>
             </div>
             {v.tagesende !== v.ankunft && (

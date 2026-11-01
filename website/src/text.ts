@@ -72,7 +72,7 @@ export const CLASS_KURZ: Record<GradeClass, string> = {
   road: "Fahrweg",
 };
 
-// Short place names for labels: "Kärlingerhaus am Funtensee" → "Kärlingerhaus".
+// Short place names for labels: "Refuge de la Brèche de Roland (Les Sarradets)" → "Refuge de la Brèche de Roland".
 export const kurzName = (name: string) => name.replace(/ \(.*\)$/, "").replace(/ (am|an der|in der|im) .*$/, "");
 
 // Line colours per day (the only colours in the wireframe besides the grades).

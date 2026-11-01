@@ -29,14 +29,17 @@ the language they write. The site itself is always German, du-Form.
 
 ## Trips so far
 
-- `rund-um-den-koenigssee` – 4-day loop in Nationalpark Berchtesgaden (reference trip: variants,
-  side trips, boat, self-catering hut).
-- `e5-oberstdorf-meran` – 6 days on the E5 (one-way; bus/taxi legs between walking legs; Pitztaler
-  Jöchl is T4 in OSM and flagged).
-
 - `pyrenaeen` – 7 walking days around Gavarnie, Vignemale, Ordesa and Monte Perdido (France/Spain), with
   travel days by minibus (`plan`) and a cost estimate (`kosten`). Harder on purpose: own limits
   25 km / 1600 Hm; Monte Perdido, the Brèche north side and the Taillon are T4 and flagged. Best in
   the first half of September (Brèche hut water, ice on the Brèche).
+
+- `pyrenaeen-zug` – the train alternative from Munich: Fri to Paris (hotel), Sat TGV to Perpignan and
+  Train Jaune to Eyne; 7 walking days Eyne → Núria (Puigmal) → Ulldeter → Mantet → Mariailles
+  (Canigó, the Cheminée only as a flagged side trip) → Casteil; bus and train to Collioure, Sun TGV home.
+  Group limits; best in the second half of September (fire map until mid-Sept, huts and Train Jaune
+  until about 27 Sept).
+
+The two earlier test trips (Königssee, E5) were removed on 2026-11-01. The group travels from Munich.
 
 Status of all: planning; dates not set.

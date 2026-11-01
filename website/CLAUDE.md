@@ -55,7 +55,7 @@ files — the same code runs in the browser and in `npm run check`.
   optional `abstecher` (out-and-back side trips from a place).
 - Each variant is a list of legs in order: walking legs (`gehen: <gpx>`, at least one) and transport
   (`fahrt`: bahn, schiff, bus, taxi) before, between or after them. So a cable-car start and a boat
-  start share the same day, and so does walk → taxi → walk (E5, Holzgau → Madau). The model joins
+  start share the same day, and so does walk → taxi → walk. The model joins
   the walking legs into one track (`walk.teile` keeps them apart): km, Höhenmeter and times are the
   sums, the transfer counts with its `dauer` (needed for the clock times), maps and profiles draw
   each leg separately.
@@ -75,7 +75,7 @@ files — the same code runs in the browser and in `npm run check`.
   `--out <dir>` writes elsewhere, e.g. a scratch folder to try a route first.
 - Via points (passes, junctions) force the intended trail. Put them **on the trail**, not on the hut
   or summit node: BRouter snaps to the nearest way, which may be a via ferrata or a T4 spur
-  (happened at the Similaunhütte and below the Braunschweiger Hütte). For a marked long-distance
+  (happened at the Similaunhütte and below the Braunschweiger Hütte on an earlier test trip). For a marked long-distance
   trail, take via points from its OSM route relation (Overpass `relation[route=hiking][ref=E5]` →
   `way(r)` → `out geom`). For a better path, ask BRouter for `alternativeidx=1..3` with
   `format=geojson` and take a coordinate from the alternative that looks right.

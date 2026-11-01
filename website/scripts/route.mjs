@@ -5,8 +5,8 @@
 //   node scripts/route.mjs <file-slug> "<title>" <lat,lon> <lat,lon> [...more waypoints]
 //     --tour <trip-slug> | --out <dir>   [--profile hiking-mountain] [--sac 4] [--straight 3,4]
 //
-// Example: node scripts/route.mjs tag-1-jennerbahn "Tag 1" 47.58,13.00 47.57,13.02 --tour rund-um-den-koenigssee
-//   → content/touren/rund-um-den-koenigssee/routen/tag-1-jennerbahn.gpx
+// Example: node scripts/route.mjs tag-2 "Tag 2" 42.77940,-0.12415 42.77929,-0.13135 42.79292,-0.14143 --tour pyrenaeen
+//   → content/touren/pyrenaeen/routen/tag-2.gpx
 //
 // Waypoints are lat,lon (the order Google Maps / Nominatim show them).
 // Profiles on brouter.de: hiking-mountain (default), trekking, shortest.

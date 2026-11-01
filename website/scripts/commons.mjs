@@ -2,13 +2,13 @@
 // Find and fetch freely licensed photos on Wikimedia Commons for the trip pages.
 //
 // Search (prints candidates, saves 600 px previews to look at before choosing):
-//   node scripts/commons.mjs suche "Funtensee Kärlingerhaus" [--min 2400] [--anzahl 12] [--qualitaet] [--vorschau <dir>]
+//   node scripts/commons.mjs suche "Refugio de Góriz" [--min 2400] [--anzahl 12] [--qualitaet] [--vorschau <dir>]
 //     --min       smallest original width in px (default 2400; portraits: use the long side)
 //     --qualitaet only Quality/Featured/Valued images
 //     --vorschau  folder for the previews (default: a temp folder, printed at the end)
 //
 // Fetch one (downloads a 1600 px version into public/, compresses it, prints the `bild` entry):
-//   node scripts/commons.mjs hole "File:Funtensee 2019.jpg" public/bilder/koenigssee/funtensee.jpg [--breite 1600]
+//   node scripts/commons.mjs hole "File:Lago Helado.jpg" public/bilder/pyrenaeen/lago-helado.jpg [--breite 1600]
 //
 // Only CC0, public domain, CC BY and CC BY-SA pass (no NC/ND, no "fair use"). The printed entry has
 // credit, lizenz and quelle (the file page), which the site lists under "Quellen & Stand".

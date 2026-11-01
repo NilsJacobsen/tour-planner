@@ -125,7 +125,9 @@ export type Karte = {
     varianten: { id: string; linien: [number, number][][] }[];
     abstecher: { id: string; linie: [number, number][] }[];
   }[];
-  fahrten: { mittel: Fahrt["mittel"]; von: [number, number]; nach: [number, number] }[];
+  // `fern`: a long transfer (e.g. down to the sea) drawn only as a short stub towards its destination,
+  // so the walking route keeps its size; the destination's name labels the stub.
+  fahrten: { mittel: Fahrt["mittel"]; von: [number, number]; nach: [number, number]; ziel: string; fern?: boolean }[];
   orte: { ort: Ort; rolle: "huette" | "start" | "ziel" }[];
   wasser: [number, number][][];
   bbox: [number, number, number, number];
@@ -666,8 +668,10 @@ export function buildSite(files: Files, urls: Record<string, string> = {}): { si
       for (const [i, f] of e.standard.fahrten.entries()) {
         const vorige = e.standard.fahrten[i - 1];
         const letzte = karte.fahrten.at(-1);
-        if (vorige && letzte && vorige.wann === f.wann && vorige.teil === f.teil) letzte.nach = [f.nach.lon, f.nach.lat];
-        else karte.fahrten.push({ mittel: f.fahrt.mittel, von: [f.von.lon, f.von.lat], nach: [f.nach.lon, f.nach.lat] });
+        if (vorige && letzte && vorige.wann === f.wann && vorige.teil === f.teil) {
+          letzte.nach = [f.nach.lon, f.nach.lat];
+          letzte.ziel = f.nach.name;
+        } else karte.fahrten.push({ mittel: f.fahrt.mittel, von: [f.von.lon, f.von.lat], nach: [f.nach.lon, f.nach.lat], ziel: f.nach.name });
       }
     }
     // A one-way trip also marks where it ends. A last night at the finish shows only as the finish.
@@ -683,10 +687,25 @@ export function buildSite(files: Files, urls: Record<string, string> = {}): { si
       karte.bbox = [Math.min(karte.bbox[0], lon), Math.min(karte.bbox[1], lat), Math.max(karte.bbox[2], lon), Math.max(karte.bbox[3], lat)];
     };
     for (const e of karte.etappen) for (const [lon, lat] of [...e.linien.flat(), ...e.varianten.flatMap((v) => v.linien.flat())]) extend(lon, lat);
+    // Transfers that end far outside the walking area (more than half its size away) become a short
+    // stub, and a finish out there is not drawn as a place.
+    const [w0, s0, e0, n0] = karte.bbox;
+    const kx = Math.cos(((s0 + n0) / 2) * (Math.PI / 180));
+    const spanne = Math.max((e0 - w0) * kx, n0 - s0);
+    const weitWeg = ([lon, lat]: [number, number]) =>
+      Math.max(w0 - lon, lon - e0, 0) * kx > spanne / 2 || Math.max(s0 - lat, lat - n0, 0) > spanne / 2;
     for (const f of karte.fahrten) {
+      if (weitWeg(f.nach)) {
+        const dx = (f.nach[0] - f.von[0]) * kx, dy = f.nach[1] - f.von[1];
+        const len = Math.hypot(dx, dy) || 1;
+        const stub = spanne * 0.18;
+        f.nach = [f.von[0] + (dx / len) * stub / kx, f.von[1] + (dy / len) * stub];
+        f.fern = true;
+      }
       extend(...f.von);
       extend(...f.nach);
     }
+    karte.orte = karte.orte.filter((o) => !(o.rolle === "ziel" && weitWeg([o.ort.lon, o.ort.lat])));
     const geo = `${base}/karte.geojson`;
     if (geo in files) {
       try {

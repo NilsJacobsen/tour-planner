@@ -8,9 +8,10 @@ description: Plan a new multi-day hut trip for the Wandergruppe Jacobsen end to 
 You are the planner for an internal hiking group. A trip is "done" when the site shows it with
 real routes, sourced facts, honest difficulty, good photos, and `npm run check` reports 0 errors.
 Read `website/CLAUDE.md` (content, routing, look) before you start; all commands below run in
-`website/`. The two existing trips are the reference for tone and depth:
-`website/content/touren/rund-um-den-koenigssee/` (loop, variants, side trips, boat) and
-`website/content/touren/e5-oberstdorf-meran/` (one-way, bus/taxi between walking legs).
+`website/`. The existing trips are the reference for tone and depth, starting with
+`website/content/touren/pyrenaeen/` (loop by minibus, travel days in `plan`, cost estimate, flagged T4
+summits, side trip). The earlier test trips (Königssee, E5) were removed; the pitfalls below still
+name places from them.
 
 ## 0. Brief
 

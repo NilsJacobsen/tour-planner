@@ -4,7 +4,7 @@
 // Usage: node scripts/neue-tour.mjs <slug> "<Titel>" --orte start,nacht-1,nacht-2,…,ziel
 //   --orte  place ids from content/allgemein/orte.yaml, in order: where day 1 starts, then where
 //           each night is spent, then where the last day ends (a loop ends where it started).
-//           So a 4-day loop with 3 huts: --orte schoenau,gotzenalm,wasseralm,kaerlingerhaus,schoenau
+//           So a 3-day loop with 2 huts: --orte gavarnie,refuge-bayssellance,refuge-oulettes-de-gaube,gavarnie
 //
 // Writes content/touren/<slug>/tour.md, etappen/tag-N.md and an empty routen/ folder. It refuses
 // to overwrite an existing trip. Until every TODO is filled and the GPX exist, `npm run check`
@@ -39,7 +39,7 @@ const tage = orte.length - 1;
 const heute = new Date().toISOString().slice(0, 10);
 
 const tour = `---
-# Trip page. Field reference: src/content/schema.ts (TourSchema). Examples: the Königssee and E5 trips.
+# Trip page. Field reference: src/content/schema.ts (TourSchema). Example: the Pyrenees trip (content/touren/pyrenaeen).
 titel: "${titel}"
 untertitel: TODO – ein Satz, der Lust macht (wird unter dem Titel und auf der Startseite gezeigt)
 region: TODO – Gebirgsgruppe(n) · Land
@@ -103,7 +103,7 @@ const etappe = (tag) => {
   return `---
 # Day ${tag}. Field reference: src/content/schema.ts (EtappeSchema).
 tag: ${tag}
-titel: TODO – kurz und bildhaft ("Hinauf zur Gotzenalm")
+titel: TODO – kurz und bildhaft ("Über den Col des Mulets nach Spanien")
 kurz: TODO – ein, zwei Sätze, was der Tag bringt
 von: ${von}
 nach: ${nach}
