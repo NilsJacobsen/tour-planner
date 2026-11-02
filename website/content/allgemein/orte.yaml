@@ -444,3 +444,200 @@ orte:
     hinweis: Hier malten Matisse und Derain im Sommer 1905 – der Anfang des Fauvismus.
     quelle: https://www.tourisme-collioure.com/mon-collioure/racontez-moi-le-fauvisme/
     geprueft: "2026-11-01"
+
+  # --- pyrenaeen-meer ---
+  - id: mont-louis
+    name: Bahnhof Mont-Louis-La Cabanasse
+    typ: ort
+    lat: 42.50206
+    lon: 2.11322
+    hinweis: Haltestelle des Train Jaune in La Cabanasse, unterhalb der Festungsstadt Mont-Louis.
+    quelle: https://letrainjaune.fr/horaires-et-infos/
+    geprueft: "2026-11-01"
+  - id: auberge-du-carlit
+    name: Auberge du Carlit (Lac des Bouillouses)
+    bild:
+      src: /bilder/orte/auberge-du-carlit.jpg
+      motiv: Der Lac des Bouillouses vom Staudamm aus, Granitufer und Bergkiefern, rechts hinten der Puig Peric
+      format: quer
+      credit: Marc REYNES (Wikimedia Commons)
+      lizenz: CC BY-SA 4.0
+      quelle: "https://commons.wikimedia.org/wiki/File:LAC_ETE_(163).jpg"
+    typ: huette
+    lat: 42.56000
+    lon: 2.00387
+    telefon: "+33 4 68 04 22 23"
+    hinweis: >-
+      Gasthaus direkt am Staudamm des Lac des Bouillouses mit 45 Plätzen, Halbpension 55 € pro Person. Bezahlt wird mit Karte, bar,
+      per Scheck oder Überweisung. Gleich daneben liegen die Refuge des Bouillouses (+33 4 68 04 93 88) und das
+      Hôtel des Bones Hores (+33 4 68 04 24 22).
+    huette:
+      betreiber: privat
+      saison: "2026: 20. April bis 15. Oktober"
+      versorgung: bewirtschaftet
+      buchung: Telefonisch.
+    quelle: https://www.tourisme-pyreneesorientales.com/sorganiser/trouver-un-hebergement/villages-de-vacances-et-maisons-familiales/auberge-du-carlit-les-angles-fr-5786115/
+    geprueft: "2026-11-01"
+  - id: barrage-des-bouillouses
+    name: Staudamm des Lac des Bouillouses
+    typ: aussicht
+    lat: 42.56023
+    lon: 2.00192
+    hinweis: >-
+      Gebaut 1904 bis 1910 zusammen mit dem Kraftwerk La Cassagne, um Strom für den Train Jaune zu erzeugen.
+    quelle: https://shem.fr/wp-content/uploads/SHEM_depliant-Vallee-TET_Vdef.pdf
+    geprueft: "2026-11-01"
+  - id: lac-d-aude
+    name: Lac d'Aude
+    typ: see
+    lat: 42.56957
+    lon: 2.02459
+  - id: estanys-dels-esquits
+    name: Estanys dels Esquits
+    typ: see
+    lat: 42.54918
+    lon: 2.01593
+  - id: estany-de-la-comassa
+    name: Estany de la Comassa
+    typ: see
+    lat: 42.56672
+    lon: 1.97633
+  - id: pic-carlit
+    name: Pic Carlit
+    typ: gipfel
+    lat: 42.56984
+    lon: 1.93209
+    hinweis: Der Gipfel, nach dem das Carlit-Massiv heißt. Vom Staudamm sind es laut Département rund 3 h 20 bis oben, auf gelb markiertem Weg.
+    quelle: https://www.ledepartement66.fr/media/2026/07/Bouillouses_BROCHCOMPLETE_25.pdf
+    geprueft: "2026-11-01"
+  - id: four-solaire-mont-louis
+    name: Sonnenofen von Mont-Louis
+    typ: aussicht
+    lat: 42.50745
+    lon: 2.12109
+    telefon: "+33 4 68 04 26 04"
+    hinweis: >-
+      1949 baute Félix Trombe hier den ersten Sonnenofen der Welt mit doppelter Spiegelung. 2026 geöffnet Montag bis
+      Freitag 9:30–12:00 und 13:30–17:30, Eintritt 6 €.
+    quelle: https://www.tourisme-pyreneesorientales.com/four-solaire-de-mont-louis/mont-louis/pcular0660000070
+    geprueft: "2026-11-01"
+  - id: pont-gisclard
+    name: Pont Gisclard
+    typ: aussicht
+    lat: 42.50389
+    lon: 2.14331
+    hinweis: >-
+      Die Hängebrücke des Train Jaune, 234 m lang und 80 m über der Têt, gebaut 1907–1908. Ihr Ingenieur Albert
+      Gisclard starb 1909 nach den Belastungsproben bei einem Unfall des Zuges.
+    quelle: https://letrainjaune.fr/decouvrir-le-train-jaune/histoire-et-prouesses/
+    geprueft: "2026-11-01"
+  - id: villefranche-de-conflent
+    name: Villefranche-de-Conflent
+    bild:
+      src: /bilder/orte/villefranche-de-conflent.jpg
+      motiv: Die Vauban-Stadtmauer von Villefranche-de-Conflent mit Tor und Brücke über den Cady, oben am Hang das Fort Libéria
+      format: quer
+      credit: H. Zell (Wikimedia Commons)
+      lizenz: CC BY-SA 3.0
+      quelle: "https://commons.wikimedia.org/wiki/File:Villefranche-de-Conflent_03.jpg"
+    typ: ort
+    lat: 42.59173
+    lon: 2.37032
+    hinweis: >-
+      Festungsstadt von Vauban, seit 2008 UNESCO-Welterbe, und Talstation des Train Jaune (Bahnhof
+      Villefranche-Vernet-les-Bains). In der Altstadt gibt es kein Hotel, aber mehrere Ferienhäuser – zum Beispiel
+      die Maison des Tisserands für sechs Personen. Dort gibt es keine Halbpension.
+    quelle: https://www.gites-de-france.com/en/occitanie/pyrenees-orientales/la-maison-des-tisserands-66g122311
+    geprueft: "2026-11-01"
+  - id: thues-caranca
+    name: Bahnhof Thuès-Carança
+    typ: ort
+    lat: 42.52295
+    lon: 2.22273
+    hinweis: Haltestelle des Train Jaune direkt am Eingang der Gorges de la Carança.
+    quelle: https://www.tourisme-pyreneesorientales.com/app/uploads/pyreneesorientales/2026/06/V2WEB-FH32-TRAIN-JAUNE-du-30-mai-au-12-deI_cembre.pdf
+    geprueft: "2026-11-01"
+  - id: gorges-de-la-caranca
+    name: Gorges de la Carança
+    typ: aussicht
+    lat: 42.51088
+    lon: 2.22525
+    hinweis: >-
+      Stege und in den Fels gehauene Wege, angelegt 1943 für die Baustelle eines Stollens, der das Wasser der Carança
+      zum Kraftwerk von Thuès leitet. Eintritt frei.
+    quelle: https://www.tourisme-pyreneesorientales.com/destination/gorges-de-la-caranca-thues-entre-valls-fr-5742304/
+    geprueft: "2026-11-01"
+  - id: fort-saint-elme
+    name: Fort Saint-Elme
+    typ: aussicht
+    lat: 42.51864
+    lon: 3.09388
+  - id: tour-madeloc
+    name: Tour Madeloc
+    typ: aussicht
+    lat: 42.49061
+    lon: 3.07465
+    hoehe: 652
+    hinweis: >-
+      Signalturm aus dem 13. Jahrhundert, gebaut auf Betreiben von Jakob II. von Mallorca. Von hier hielt man nach
+      Schiffen und nach Spanien Ausschau und gab nachts mit Feuer, tags mit Rauch Zeichen.
+    quelle: https://www.tourisme-pyreneesorientales.com/tour-madeloc/port-vendres/pcular066v502vej
+    geprueft: "2026-11-01"
+  - id: banyuls
+    name: Banyuls-sur-Mer
+    bild:
+      src: /bilder/orte/banyuls.jpg
+      motiv: "Banyuls-sur-Mer von oben: Strand und Bucht vor den roten Dächern, dahinter terrassierte Weinberge"
+      format: quer
+      credit: cedric.lacrambe (Wikimedia Commons)
+      lizenz: CC BY-SA 4.0
+      quelle: "https://commons.wikimedia.org/wiki/File:Banyuls_sur_mer_6.jpg"
+    typ: ort
+    lat: 42.48106
+    lon: 3.12961
+    hinweis: >-
+      Ortsmitte am Rathaus; der Bahnhof an der Strecke Perpignan–Cerbère liegt ein paar Minuten oberhalb. Ein Hotel nahe am Strand ist zum Beispiel die Casa Dina
+      (+33 4 68 88 00 75, Doppelzimmer 55–85 €).
+    quelle: https://www.tourisme-pyreneesorientales.com/sorganiser/trouver-un-hebergement/hotels/hotel-la-casa-dina-banyuls-sur-mer-fr-5742861/
+    geprueft: "2026-11-01"
+  - id: torre-de-querroig
+    name: Torre de Querroig
+    typ: aussicht
+    lat: 42.43815
+    lon: 3.12086
+    hinweis: Turmruine auf dem Grenzkamm zwischen Banyuls und Portbou.
+  - id: coll-dels-belitres
+    name: Coll dels Belitres
+    typ: pass
+    lat: 42.43491
+    lon: 3.15962
+    hinweis: Grenzpass zwischen Cerbère und Portbou.
+  - id: portbou
+    name: Portbou
+    typ: ort
+    lat: 42.42470
+    lon: 3.15803
+    hinweis: >-
+      Grenzbahnhof in Katalonien. Über der Bucht steht „Passatges“, die Gedenkstätte für Walter Benjamin von Dani
+      Karavan, eingeweiht 1994.
+    quelle: https://empordaturisme.com/en/?p=40757
+    geprueft: "2026-11-01"
+  - id: paulilles
+    name: Anse de Paulilles
+    typ: aussicht
+    lat: 42.50131
+    lon: 3.12326
+    telefon: "+33 4 68 95 23 40"
+    hinweis: >-
+      Bucht mit der ehemaligen Dynamitfabrik (1870–1984), heute ein Gelände des Conservatoire du littoral. Das
+      Besucherzentrum hatte 2026 täglich 9–12 und 14–17 Uhr geöffnet, Eintritt frei.
+    quelle: https://www.tourisme-pyreneesorientales.com/maison-du-site-de-lanse-de-paulilles/port-vendres/pcular066fs0007q
+    geprueft: "2026-11-01"
+  - id: cap-bear
+    name: Cap Béar
+    typ: aussicht
+    lat: 42.51568
+    lon: 3.14009
+    hinweis: Kap mit einem Leuchtturm von 1905, seit 2012 Baudenkmal.
+    quelle: https://pop.culture.gouv.fr/notice/merimee/PA66000034
+    geprueft: "2026-11-01"
