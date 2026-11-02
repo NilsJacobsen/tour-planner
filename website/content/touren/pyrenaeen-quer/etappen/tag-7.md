@@ -18,7 +18,7 @@ varianten:
       - fahrt:
           mittel: zug
           von: bolquere-eyne
-          nach: villefranche-de-conflent
+          nach: bahnhof-villefranche
           abfahrt: "15:57"
           dauer: 90
           hinweis: >-
@@ -29,7 +29,7 @@ varianten:
           geprueft: "2026-11-01"
       - fahrt:
           mittel: zug
-          von: villefranche-de-conflent
+          von: bahnhof-villefranche
           nach: perpignan
           abfahrt: "18:14"
           dauer: 50

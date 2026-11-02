@@ -15,7 +15,7 @@ varianten:
       - gehen: tag-8.gpx
       - fahrt:
           mittel: zug
-          von: banyuls
+          von: bahnhof-banyuls
           nach: perpignan
           abfahrt: "17:33"
           dauer: 31

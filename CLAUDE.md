@@ -55,6 +55,11 @@ the language they write. The site itself is always German, du-Form.
   d'Ossau, Ayous lakes, down the Chemin de la Mâture to Etsaut; night train from Pau. Own limits 20 km / 1300 Hm / T3;
   Passage d'Orteig avoided. First half of September (Ayous closes late Sept).
 
+- `pyrenaeen-meer` – "Von den Carlit-Seen ans Meer": TGV to Perpignan and Train Jaune to Mont-Louis; two days at the
+  Bouillouses lakes (Pic Carlit), GR 10 to Mont-Louis (solar furnace), Carança gorge, then the coast: Tour Madeloc,
+  Chemin Walter Benjamin to Portbou, coast path back to Collioure. Canigó only seen from afar (Cortalets works).
+  Own limits 20 km / 1300 Hm / T3. Second half of September (fire map until mid-Sept).
+
 The two earlier test trips (Königssee, E5) were removed on 2026-11-01. The group travels from Munich.
 
 Status of all: planning; dates not set.

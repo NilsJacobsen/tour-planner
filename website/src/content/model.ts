@@ -681,7 +681,8 @@ export function buildSite(files: Files, urls: Record<string, string> = {}): { si
     for (const h of huetten) {
       if (h.ort.id !== einweg?.id && !karte.orte.some((o) => o.ort.id === h.ort.id)) karte.orte.push({ ort: h.ort, rolle: "huette" });
     }
-    if (etappen.length) karte.orte.push({ ort: etappen[0].von, rolle: "start" });
+    // A start that is also a night stop is drawn once, as the hut.
+    if (etappen.length && !karte.orte.some((o) => o.ort.id === etappen[0].von.id)) karte.orte.push({ ort: etappen[0].von, rolle: "start" });
     if (einweg) karte.orte.push({ ort: einweg, rolle: "ziel" });
     const extend = (lon: number, lat: number) => {
       karte.bbox = [Math.min(karte.bbox[0], lon), Math.min(karte.bbox[1], lat), Math.max(karte.bbox[2], lon), Math.max(karte.bbox[3], lat)];
